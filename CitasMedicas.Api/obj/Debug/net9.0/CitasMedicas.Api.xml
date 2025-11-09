@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CitasMedicas.Api</name>
+    </assembly>
+    <members>
+        <member name="T:CitasMedicas.Api.Controllers.CitaController">
+            <summary>
+            Controlador que gestiona las operaciones relacionadas con las citas médicas.
+            </summary>
+            <remarks>
+            Permite reservar citas, listar citas con paginación y filtrar según diferentes criterios.
+            </remarks>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.CitaController.Reservar(CitasMedicas.Core.DTOs.ReservaCitaDto)">
+            <summary>
+            Registra una nueva cita médica en el sistema.
+            </summary>
+            <remarks>
+            Este método permite a un paciente reservar una cita médica con un médico disponible.  
+            Se valida la disponibilidad y los datos ingresados antes de realizar el registro.  
+            Retorna un objeto <see cref="T:CitasMedicas.Api.Responses.ApiResponse`1"/> con los detalles de la cita creada.
+            </remarks>
+            <param name="dto">Datos de la cita que se desea reservar.</param>
+            <returns>Una respuesta con el detalle de la cita registrada o un mensaje de error.</returns>
+            <response code="201">Cita registrada correctamente.</response>
+            <response code="400">Error de validación o cita no disponible.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.CitaController.Listar(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+            <summary>
+            Recupera una lista paginada de citas médicas según los filtros especificados.
+            </summary>
+            <remarks>
+            Este método devuelve una colección paginada de citas con la información de paginación incluida en la respuesta.
+            Permite filtrar por paciente, médico, fecha o estado.
+            </remarks>
+            <param name="filters">Filtros de búsqueda y paginación.</param>
+            <returns>Una lista paginada de citas.</returns>
+            <response code="200">Retorna la lista de citas.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.CitaController.GetCitasDtoMapper(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+            <summary>
+            Recupera una lista paginada de citas como DTOs usando AutoMapper.
+            </summary>
+            <remarks>
+            Convierte los objetos <see cref="T:CitasMedicas.Core.Entities.Cita"/> en <see cref="T:CitasMedicas.Core.DTOs.ReservaCitaDto"/> utilizando AutoMapper.  
+            Retorna los resultados junto con los datos de paginación.
+            </remarks>
+            <param name="filters">Filtros aplicables para la búsqueda y paginación.</param>
+            <returns>Lista paginada de objetos <see cref="T:CitasMedicas.Core.DTOs.ReservaCitaDto"/>.</returns>
+            <response code="200">Citas obtenidas correctamente.</response>
+            <response code="500">Error interno del servidor.</response>
+        </member>
+    </members>
+</doc>

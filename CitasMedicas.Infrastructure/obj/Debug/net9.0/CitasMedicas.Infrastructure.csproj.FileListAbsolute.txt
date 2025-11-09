@@ -1,0 +1,17 @@
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.AssemblyInfo.cs
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\Debug\net9.0\CitasMedicas.Infrastructure.deps.json
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\Debug\net9.0\CitasMedicas.Infrastructure.runtimeconfig.json
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\Debug\net9.0\CitasMedicas.Infrastructure.dll
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\Debug\net9.0\CitasMedicas.Infrastructure.pdb
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\Debug\net9.0\CitasMedicas.Core.dll
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\Debug\net9.0\CitasMedicas.Core.pdb
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMed.2935A842.Up2Date
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.dll
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\refint\CitasMedicas.Infrastructure.dll
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.pdb
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.genruntimeconfig.cache
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\ref\CitasMedicas.Infrastructure.dll
