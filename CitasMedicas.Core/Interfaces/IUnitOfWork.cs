@@ -12,6 +12,7 @@ namespace CitasMedicas.Core.Interfaces
         IBaseRepository<Disponibilidad> DisponibilidadRepository { get; }
         IBaseRepository<Cita> CitaRepository { get; }
         IBaseRepository<Pago> PagoRepository { get; }
+        ISecurityRepository SecurityRepository { get; }
 
         void SaveChanges();
         Task SaveChangesAsync();

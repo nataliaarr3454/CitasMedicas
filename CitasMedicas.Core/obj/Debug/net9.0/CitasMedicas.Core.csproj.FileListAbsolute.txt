@@ -1,11 +1,12 @@
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\bin\Debug\net9.0\CitasMedicas.Core.deps.json
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\bin\Debug\net9.0\CitasMedicas.Core.dll
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\bin\Debug\net9.0\CitasMedicas.Core.pdb
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\obj\Debug\net9.0\CitasMedicas.Core.csproj.AssemblyReference.cache
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\obj\Debug\net9.0\CitasMedicas.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\obj\Debug\net9.0\CitasMedicas.Core.AssemblyInfoInputs.cache
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\obj\Debug\net9.0\CitasMedicas.Core.AssemblyInfo.cs
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\obj\Debug\net9.0\CitasMedicas.Core.csproj.CoreCompileInputs.cache
-C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\obj\Debug\net9.0\CitasMedicas.Core.csproj.AssemblyReference.cache
-C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\bin\Debug\net9.0\CitasMedicas.Core.deps.json
-C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\bin\Debug\net9.0\CitasMedicas.Core.dll
-C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\bin\Debug\net9.0\CitasMedicas.Core.pdb
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\obj\Debug\net9.0\CitasMedicas.Core.sourcelink.json
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\obj\Debug\net9.0\CitasMedicas.Core.dll
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\obj\Debug\net9.0\refint\CitasMedicas.Core.dll
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Core\obj\Debug\net9.0\CitasMedicas.Core.pdb

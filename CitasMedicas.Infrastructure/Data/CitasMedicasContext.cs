@@ -1,5 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using CitasMedicas.Core.Entities;
+﻿using CitasMedicas.Core.Entities;
+using CitasMedicas.Core.Enums;
+using Microsoft.EntityFrameworkCore;
 
 namespace CitasMedicas.Infrastructure.Data
 {
@@ -15,8 +16,7 @@ namespace CitasMedicas.Infrastructure.Data
         public DbSet<Cita> Citas { get; set; } = null!;
         public DbSet<Pago> Pagos { get; set; } = null!;
         public DbSet<Disponibilidad> Disponibilidades { get; set; } = null!;
-        public DbSet<Enfermedad> Enfermedades { get; set; } = null!;
-        public DbSet<PacienteEnfermedad> PacientesEnfermedades { get; set; } = null!;
+        public DbSet<Security> Security { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -65,6 +65,28 @@ namespace CitasMedicas.Infrastructure.Data
                 entity.Property(e => e.Especialidad).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.Correo).IsRequired().HasMaxLength(100);
                 entity.HasIndex(e => e.Correo).IsUnique(); 
+            });
+            modelBuilder.Entity<Security>(entity =>
+            {
+                entity.ToTable("Security");
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Login)
+                    .IsRequired()
+                    .HasMaxLength(100);
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasMaxLength(200);
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(100);
+                entity.Property(e => e.Role)
+                    .IsRequired()
+                    .HasMaxLength(15)
+                    .HasConversion(
+                        v => v.ToString(),
+                        v => (RoleType)Enum.Parse(typeof(RoleType), v)
+                    );
+                entity.HasIndex(e => e.Login).IsUnique();
             });
         }
     }

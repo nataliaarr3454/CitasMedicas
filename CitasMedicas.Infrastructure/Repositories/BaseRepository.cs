@@ -11,8 +11,8 @@ namespace CitasMedicas.Infrastructure.Repositories
     public class BaseRepository<T>
        : IBaseRepository<T> where T : BaseEntity
     {
-        private readonly CitasMedicasContext _context;
-        private readonly DbSet<T> _entities;
+        protected readonly CitasMedicasContext _context;
+        protected readonly DbSet<T> _entities;
 
         public BaseRepository(CitasMedicasContext context)
         {

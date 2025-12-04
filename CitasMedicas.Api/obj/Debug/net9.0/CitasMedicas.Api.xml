@@ -4,43 +4,49 @@
         <name>CitasMedicas.Api</name>
     </assembly>
     <members>
-        <member name="T:CitasMedicas.Api.Controllers.CitaController">
+        <member name="T:CitasMedicas.Api.Controllers.v1.CitaController">
             <summary>
-            Controlador que gestiona las operaciones relacionadas con las citas médicas.
+            Controlador que gestiona las operaciones relacionadas con las citas médicas (v1).
             </summary>
             <remarks>
             Permite reservar citas, listar citas con paginación y filtrar según diferentes criterios.
             </remarks>
         </member>
-        <member name="M:CitasMedicas.Api.Controllers.CitaController.Reservar(CitasMedicas.Core.DTOs.ReservaCitaDto)">
+        <member name="M:CitasMedicas.Api.Controllers.v1.CitaController.Reservar(CitasMedicas.Core.DTOs.ReservaCitaDto)">
             <summary>
-            Registra una nueva cita médica en el sistema.
+            Registra una nueva cita médica en el sistema (v1).
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.v1.CitaController.Listar(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+            <summary>
+            Recupera una lista paginada de citas médicas según los filtros especificados (v1).
+            </summary>
+        </member>
+        <member name="T:CitasMedicas.Api.Controllers.v2.CitaController">
+            <summary>
+            Controlador que gestiona las operaciones relacionadas con las citas médicas (v2).
             </summary>
             <remarks>
-            Este método permite a un paciente reservar una cita médica con un médico disponible.  
-            Se valida la disponibilidad y los datos ingresados antes de realizar el registro.  
-            Retorna un objeto <see cref="T:CitasMedicas.Api.Responses.ApiResponse`1"/> con los detalles de la cita creada.
+            Versión mejorada que incluye filtros avanzados y estadísticas.
             </remarks>
-            <param name="dto">Datos de la cita que se desea reservar.</param>
-            <returns>Una respuesta con el detalle de la cita registrada o un mensaje de error.</returns>
-            <response code="201">Cita registrada correctamente.</response>
-            <response code="400">Error de validación o cita no disponible.</response>
-            <response code="500">Error interno del servidor.</response>
         </member>
-        <member name="M:CitasMedicas.Api.Controllers.CitaController.Listar(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.Reservar(CitasMedicas.Core.DTOs.ReservaCitaDto)">
             <summary>
-            Recupera una lista paginada de citas médicas según los filtros especificados.
+            Registra una nueva cita médica en el sistema (v2).
             </summary>
             <remarks>
-            Este método devuelve una colección paginada de citas con la información de paginación incluida en la respuesta.
-            Permite filtrar por paciente, médico, fecha o estado.
+            Versión mejorada con validaciones adicionales y mejor respuesta
             </remarks>
-            <param name="filters">Filtros de búsqueda y paginación.</param>
-            <returns>Una lista paginada de citas.</returns>
-            <response code="200">Retorna la lista de citas.</response>
-            <response code="500">Error interno del servidor.</response>
         </member>
-        <member name="M:CitasMedicas.Api.Controllers.CitaController.GetCitasDtoMapper(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.Listar(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+            <summary>
+            Recupera una lista paginada de citas médicas según los filtros especificados (v2).
+            </summary>
+            <remarks>
+            Versión mejorada con filtros avanzados y estadísticas.
+            </remarks>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.GetCitasDtoMapper(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
             <summary>
             Recupera una lista paginada de citas como DTOs usando AutoMapper.
             </summary>
@@ -52,6 +58,11 @@
             <returns>Lista paginada de objetos <see cref="T:CitasMedicas.Core.DTOs.ReservaCitaDto"/>.</returns>
             <response code="200">Citas obtenidas correctamente.</response>
             <response code="500">Error interno del servidor.</response>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.Estadisticas">
+            <summary>
+            Obtiene estadísticas de citas (nuevo en v2).
+            </summary>
         </member>
     </members>
 </doc>

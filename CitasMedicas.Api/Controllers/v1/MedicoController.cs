@@ -1,17 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using FluentValidation;
-using CitasMedicas.Core.DTOs;
+﻿using CitasMedicas.Core.DTOs;
 using CitasMedicas.Core.Interfaces;
 using CitasMedicas.Api.Responses;
 using CitasMedicas.Core.CustomEntities;
 using CitasMedicas.Core.Enums;
+using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CitasMedicas.Api.Controllers
+namespace CitasMedicas.Api.Controllers.v1
 {
+    [Authorize(Roles = $"{nameof(RoleType.Administrador)},{nameof(RoleType.Medico)}")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
-    [Route("api/[controller]")]
     public class MedicoController : ControllerBase
     {
         private readonly IMedicoService _service;

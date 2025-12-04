@@ -6,12 +6,14 @@ using CitasMedicas.Core.QueryFilters;
 using CitasMedicas.Core.CustomEntities;
 using CitasMedicas.Core.Enums;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CitasMedicas.Api.Controllers
+namespace CitasMedicas.Api.Controllers.v1
 {
+    [Authorize(Roles = $"{nameof(RoleType.Administrador)},{nameof(RoleType.Medico)}")]
     [ApiController]
     [Route("api/[controller]")]
     public class DisponibilidadController : ControllerBase

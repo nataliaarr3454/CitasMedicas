@@ -3,200 +3,288 @@
   "WorkspaceRootPath": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\citasmedicas.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\citasmedicas.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\v1\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\v1\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\dtos\\pacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\dtos\\pacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\validators\\pacientedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\validators\\pacientedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\data\\citasmedicascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\data\\citasmedicascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\dtos\\medicodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\dtos\\medicodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\validators\\disponibilidaddtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\validators\\disponibilidaddtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\imedicoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\imedicoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\disponibilidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\disponibilidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\enfermedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\enfermedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\ipacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\ipacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\disponibilidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\disponibilidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\validators\\medicodtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\validators\\medicodtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\pacienteenfermedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\pacienteenfermedad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\medicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\medicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\idisponibilidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\idisponibilidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\imedicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\imedicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\citasmedicas.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\citasmedicas.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\services\\medicoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\services\\medicoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\services\\pacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\services\\pacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\v2\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\v2\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\filters\\globalexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\filters\\globalexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\customentities\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\customentities\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\data\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\data\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\services\\disponibilidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\services\\disponibilidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\idappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\idappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\idbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\idbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\enums\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\enums\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\queryfilters\\disponibilidadqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\queryfilters\\disponibilidadqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\idisponibilidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\idisponibilidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\dtos\\disponibilidaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\dtos\\disponibilidaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\citasmedicas.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\citasmedicas.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\dtos\\reservacitadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\dtos\\reservacitadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\validators\\reservacitadtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\validators\\reservacitadtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\customentities\\passwordoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\customentities\\passwordoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\securityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\securityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\ipasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\ipasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\customentities\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\customentities\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\isecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\isecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\isecurityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\isecurityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\validators\\securitydtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\validators\\securitydtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\validators\\userloginvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\validators\\userloginvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\data\\citasmedicascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\data\\citasmedicascontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\enums\\roletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\enums\\roletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\dtos\\securitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\dtos\\securitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\v1\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\v1\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\v1\\medicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\v1\\medicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\v1\\disponibilidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\v1\\disponibilidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\v1\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\v1\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\data\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\data\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\citasmedicas.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\citasmedicas.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\enums\\typemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\enums\\typemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\customentities\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\customentities\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\customentities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\customentities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\services\\citaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\services\\citaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\responses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\responses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\validators\\reservacitadtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\validators\\reservacitadtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\validators\\pacientedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\validators\\pacientedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\validators\\medicodtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\validators\\medicodtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\validators\\disponibilidaddtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\validators\\disponibilidaddtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\medicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\medicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\filters\\globalexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\filters\\globalexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\services\\pacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\services\\pacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\services\\medicoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\services\\medicoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\services\\disponibilidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\services\\disponibilidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\queryfilters\\paginationqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\queryfilters\\paginationqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\queryfilters\\disponibilidadqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\queryfilters\\disponibilidadqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\queryfilters\\citaqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\queryfilters\\citaqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\queryfilters\\paginationqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\queryfilters\\paginationqueryfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\ipacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\ipacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\imedicoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\imedicoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\imedicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\imedicorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\idisponibilidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\idisponibilidadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\idisponibilidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\idisponibilidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\idbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\idbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\idappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\idappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\icitaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\icitaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\exceptions\\businessexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\enums\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\enums\\databaseprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\disponibilidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\disponibilidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\dtos\\pacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\dtos\\pacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\dtos\\medicodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\dtos\\medicodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\dtos\\disponibilidaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\dtos\\disponibilidaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\customentities\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\customentities\\responsedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\customentities\\pagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -207,32 +295,16 @@
       "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\customentities\\pagedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\customentities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\customentities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\icitaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\icitaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\responses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\responses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\services\\citaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\services\\citaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\disponibilidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\disponibilidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\medicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\medicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.api\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD51901-96BC-4448-A7FB-8AC061F765B4}|CitasMedicas.Api\\CitasMedicas.Api.csproj|solutionrelative:citasmedicas.api\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EA5B36A-323D-4D5A-A4BE-2800B868716E}|CitasMedicas.Core\\CitasMedicas.Core.csproj|solutionrelative:citasmedicas.core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|c:\\users\\arrazola\\documents\\citasmedicasonline\\citasmedicas.infrastructure\\repositories\\disponibilidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A893BC-39EF-4307-A5B8-0E403D09D0AC}|CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj|solutionrelative:citasmedicas.infrastructure\\repositories\\disponibilidadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -242,223 +314,491 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "PacienteController.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\PacienteController.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\PacienteController.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\PacienteController.cs",
-              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\PacienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T15:31:48.55Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "MedicoController.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\MedicoController.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\MedicoController.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\MedicoController.cs",
-              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\MedicoController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T15:11:33.02Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CitaController.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\CitaController.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\CitaController.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\CitaController.cs",
-              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\CitaController.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAQwIgAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T00:58:17.314Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "DisponibilidadController.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\DisponibilidadController.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\DisponibilidadController.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\DisponibilidadController.cs",
-              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\DisponibilidadController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T18:53:54.747Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Mappings\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Mappings\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Mappings\\MappingProfile.cs",
-              "RelativeToolTip": "CitasMedicas.Infrastructure\\Mappings\\MappingProfile.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T02:30:47.655Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IUnitOfWork.cs",
-              "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T22:06:07.032Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Repositories\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\BaseRepository.cs",
-              "RelativeToolTip": "CitasMedicas.Infrastructure\\Repositories\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T19:36:37.405Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Program.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Program.cs",
-              "RelativeToolTip": "CitasMedicas.Api\\Program.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAQwG4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T00:30:35.419Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\appsettings.json*",
+              "RelativeToolTip": "CitasMedicas.Api\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-29T19:07:31.154Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CitasMedicas.Api",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\CitasMedicas.Api.csproj",
-              "RelativeDocumentMoniker": "CitasMedicas.Api\\CitasMedicas.Api.csproj",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\CitasMedicas.Api.csproj",
-              "RelativeToolTip": "CitasMedicas.Api\\CitasMedicas.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-09T01:49:50.001Z",
+              "Title": "SecurityController.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v1\\SecurityController.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\v1\\SecurityController.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v1\\SecurityController.cs",
+              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\v1\\SecurityController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwBAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T00:22:14.154Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 2,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Mappings\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "CitasMedicas.Infrastructure\\Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T02:30:47.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SecurityService.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\SecurityService.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\Services\\SecurityService.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\SecurityService.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\Services\\SecurityService.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAFgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T00:08:06.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\PasswordService.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\Services\\PasswordService.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\PasswordService.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\Services\\PasswordService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T18:39:34.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CitasMedicas.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CitasMedicas.Core.csproj",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\CitasMedicas.Core.csproj",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CitasMedicas.Core.csproj",
+              "RelativeToolTip": "CitasMedicas.Core\\CitasMedicas.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-03T23:54:38.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Program.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Program.cs",
+              "RelativeToolTip": "CitasMedicas.Api\\Program.cs",
+              "ViewState": "AgIAAIEBAAAAAAAAAAAAAIYBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T00:30:35.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CitaController.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v2\\CitaController.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\v2\\CitaController.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v2\\CitaController.cs",
+              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\v2\\CitaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T20:15:56.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TokenController.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\TokenController.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\TokenController.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\TokenController.cs",
+              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\TokenController.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAAAMkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T21:09:56.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CitasMedicas.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\CitasMedicas.Api.csproj",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\CitasMedicas.Api.csproj",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\CitasMedicas.Api.csproj",
+              "RelativeToolTip": "CitasMedicas.Api\\CitasMedicas.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-02T21:27:52.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SecurityRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\SecurityRepository.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Repositories\\SecurityRepository.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\SecurityRepository.cs",
+              "RelativeToolTip": "CitasMedicas.Infrastructure\\Repositories\\SecurityRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T00:05:42.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IPasswordService.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IPasswordService.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IPasswordService.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IPasswordService.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IPasswordService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T18:38:53.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PasswordOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\PasswordOptions.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\CustomEntities\\PasswordOptions.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\PasswordOptions.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\CustomEntities\\PasswordOptions.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T18:37:55.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\appsettings.Development.json",
+              "RelativeToolTip": "CitasMedicas.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-03T17:45:28.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ISecurityRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\ISecurityRepository.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\ISecurityRepository.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\ISecurityRepository.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\ISecurityRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T23:41:11.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T22:06:07.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "CitasMedicas.Infrastructure\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T19:36:37.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "CitasMedicas.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T21:53:04.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserLoginValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\UserLoginValidator.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Validators\\UserLoginValidator.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\UserLoginValidator.cs",
+              "RelativeToolTip": "CitasMedicas.Infrastructure\\Validators\\UserLoginValidator.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T00:18:19.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SecurityDtoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\SecurityDtoValidator.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Validators\\SecurityDtoValidator.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\SecurityDtoValidator.cs",
+              "RelativeToolTip": "CitasMedicas.Infrastructure\\Validators\\SecurityDtoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T00:17:41.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CitasMedicasContext.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Data\\CitasMedicasContext.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Data\\CitasMedicasContext.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Data\\CitasMedicasContext.cs",
+              "RelativeToolTip": "CitasMedicas.Infrastructure\\Data\\CitasMedicasContext.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T15:14:13.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ISecurityService.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\ISecurityService.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\ISecurityService.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\ISecurityService.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\ISecurityService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T00:07:15.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RoleType.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Enums\\RoleType.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\Enums\\RoleType.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Enums\\RoleType.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\Enums\\RoleType.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T23:20:58.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\UserLogin.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\UserLogin.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\UserLogin.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\Entities\\UserLogin.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T21:08:28.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Security.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Security.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\Security.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Security.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\Entities\\Security.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T23:27:23.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SecurityDto.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\DTOs\\SecurityDto.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\DTOs\\SecurityDto.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\DTOs\\SecurityDto.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\DTOs\\SecurityDto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T23:37:16.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PacienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v1\\PacienteController.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\v1\\PacienteController.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v1\\PacienteController.cs",
+              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\v1\\PacienteController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T15:31:48.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MedicoController.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v1\\MedicoController.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\v1\\MedicoController.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v1\\MedicoController.cs",
+              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\v1\\MedicoController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T15:11:33.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DisponibilidadController.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v1\\DisponibilidadController.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\v1\\DisponibilidadController.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v1\\DisponibilidadController.cs",
+              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\v1\\DisponibilidadController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T18:53:54.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CitaController.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v1\\CitaController.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\Controllers\\v1\\CitaController.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Controllers\\v1\\CitaController.cs",
+              "RelativeToolTip": "CitasMedicas.Api\\Controllers\\v1\\CitaController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAAAGgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T00:58:17.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Paciente.cs",
+              "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\Paciente.cs",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Paciente.cs",
+              "RelativeToolTip": "CitasMedicas.Core\\Entities\\Paciente.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T01:12:21.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CitasMedicas.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj",
+              "RelativeToolTip": "CitasMedicas.Infrastructure\\CitasMedicas.Infrastructure.csproj",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-01T19:25:34.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CitasMedicas.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CitasMedicas.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-01T19:17:03.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "CitaService.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\CitaService.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Services\\CitaService.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\CitaService.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Services\\CitaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T00:55:03.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T00:55:03.957Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 58,
               "Title": "ICitaService.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\ICitaService.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\ICitaService.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\ICitaService.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\ICitaService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAABQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T01:03:08.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T01:03:08.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 35,
               "Title": "TypeMessage.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Enums\\TypeMessage.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Enums\\TypeMessage.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Enums\\TypeMessage.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Enums\\TypeMessage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T00:32:41.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T00:32:41.293Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 70,
               "Title": "ResponseData.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\ResponseData.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\CustomEntities\\ResponseData.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\ResponseData.cs",
               "RelativeToolTip": "CitasMedicas.Core\\CustomEntities\\ResponseData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T00:17:59.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T00:17:59.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 73,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\Message.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\CustomEntities\\Message.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\Message.cs",
               "RelativeToolTip": "CitasMedicas.Core\\CustomEntities\\Message.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T00:16:06.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T00:16:06.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 74,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Responses\\ApiResponse.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Api\\Responses\\ApiResponse.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Api\\Responses\\ApiResponse.cs",
               "RelativeToolTip": "CitasMedicas.Api\\Responses\\ApiResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T19:20:42.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T19:20:42.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "CitaQueryFilter.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\QueryFilters\\CitaQueryFilter.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\QueryFilters\\CitaQueryFilter.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\QueryFilters\\CitaQueryFilter.cs",
               "RelativeToolTip": "CitasMedicas.Core\\QueryFilters\\CitaQueryFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T01:04:44.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T01:04:44.969Z"
             },
             {
               "$type": "Document",
@@ -468,209 +808,181 @@
               "RelativeDocumentMoniker": "CitasMedicas.Core\\QueryFilters\\PaginationQueryFilter.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\QueryFilters\\PaginationQueryFilter.cs",
               "RelativeToolTip": "CitasMedicas.Core\\QueryFilters\\PaginationQueryFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T17:11:58.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T17:11:58.416Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 71,
               "Title": "Pagination.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\Pagination.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\CustomEntities\\Pagination.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\Pagination.cs",
               "RelativeToolTip": "CitasMedicas.Core\\CustomEntities\\Pagination.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAIBJwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T21:39:18.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T21:39:18.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 72,
               "Title": "PagedList.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\PagedList.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\CustomEntities\\PagedList.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\PagedList.cs",
               "RelativeToolTip": "CitasMedicas.Core\\CustomEntities\\PagedList.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T21:45:39.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-08T21:45:39.746Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 38,
               "Title": "ReservaCitaDtoValidator.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\ReservaCitaDtoValidator.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Validators\\ReservaCitaDtoValidator.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\ReservaCitaDtoValidator.cs",
               "RelativeToolTip": "CitasMedicas.Infrastructure\\Validators\\ReservaCitaDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAIBJwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T00:53:41.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T00:53:41.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 10,
               "Title": "ReservaCitaDto.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\DTOs\\ReservaCitaDto.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\DTOs\\ReservaCitaDto.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\DTOs\\ReservaCitaDto.cs",
               "RelativeToolTip": "CitasMedicas.Core\\DTOs\\ReservaCitaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T00:50:02.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T00:50:02.682Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "RelativeToolTip": "CitasMedicas.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T21:53:04.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 69,
               "Title": "DisponibilidadDto.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\DTOs\\DisponibilidadDto.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\DTOs\\DisponibilidadDto.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\DTOs\\DisponibilidadDto.cs",
               "RelativeToolTip": "CitasMedicas.Core\\DTOs\\DisponibilidadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T16:32:04.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T16:32:04.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 54,
               "Title": "IDisponibilidadService.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IDisponibilidadService.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IDisponibilidadService.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IDisponibilidadService.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IDisponibilidadService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T18:44:00.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T18:44:00.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 49,
               "Title": "DisponibilidadQueryFilter.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\QueryFilters\\DisponibilidadQueryFilter.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\QueryFilters\\DisponibilidadQueryFilter.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\QueryFilters\\DisponibilidadQueryFilter.cs",
               "RelativeToolTip": "CitasMedicas.Core\\QueryFilters\\DisponibilidadQueryFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T16:07:35.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T16:07:35.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 61,
               "Title": "DatabaseProvider.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Enums\\DatabaseProvider.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Enums\\DatabaseProvider.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Enums\\DatabaseProvider.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Enums\\DatabaseProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T17:21:19.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T17:21:19.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 43,
               "Title": "DbConnectionFactory.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\DbConnectionFactory.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Repositories\\DbConnectionFactory.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\DbConnectionFactory.cs",
               "RelativeToolTip": "CitasMedicas.Infrastructure\\Repositories\\DbConnectionFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAIBJwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T17:37:00.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T17:37:00.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 56,
               "Title": "IDbConnectionFactory.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IDbConnectionFactory.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IDbConnectionFactory.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IDbConnectionFactory.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IDbConnectionFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T17:27:09.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T17:27:09.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 57,
               "Title": "IDapperContext.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IDapperContext.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IDapperContext.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IDapperContext.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IDapperContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAEBTwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T17:44:36.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T17:44:36.976Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 47,
               "Title": "DisponibilidadService.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\DisponibilidadService.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Services\\DisponibilidadService.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\DisponibilidadService.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Services\\DisponibilidadService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAIBJwEUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T18:46:42.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T18:46:42.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "DapperContext.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Data\\DapperContext.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Data\\DapperContext.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Data\\DapperContext.cs",
               "RelativeToolTip": "CitasMedicas.Infrastructure\\Data\\DapperContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAIwJsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T17:45:59.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T17:45:59.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 60,
               "Title": "BusinessException.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Exceptions\\BusinessException.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Exceptions\\BusinessException.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Exceptions\\BusinessException.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Exceptions\\BusinessException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvxsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T23:56:40.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T23:56:40.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 14,
               "Title": "ErrorResponse.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CustomEntities\\ErrorResponse.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\CustomEntities\\ErrorResponse.cs",
@@ -678,77 +990,59 @@
               "RelativeToolTip": "CitasMedicas.Core\\CustomEntities\\ErrorResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T00:04:35.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T00:04:35.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 44,
               "Title": "GlobalExceptionFilter.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Filters\\GlobalExceptionFilter.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Filters\\GlobalExceptionFilter.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Filters\\GlobalExceptionFilter.cs",
               "RelativeToolTip": "CitasMedicas.Infrastructure\\Filters\\GlobalExceptionFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAIBJwFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T00:07:26.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T00:07:26.065Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 45,
               "Title": "PacienteService.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\PacienteService.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Services\\PacienteService.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\PacienteService.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Services\\PacienteService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T01:22:57.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T01:22:57.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 46,
               "Title": "MedicoService.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\MedicoService.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Services\\MedicoService.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Services\\MedicoService.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Services\\MedicoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAIBJwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T00:53:15.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T00:53:15.545Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CitasMedicas.Core.csproj",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CitasMedicas.Core.csproj",
-              "RelativeDocumentMoniker": "CitasMedicas.Core\\CitasMedicas.Core.csproj",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\CitasMedicas.Core.csproj",
-              "RelativeToolTip": "CitasMedicas.Core\\CitasMedicas.Core.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-03T23:54:38.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 66,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\BaseEntity.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\BaseEntity.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T15:34:16.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T15:34:16.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 53,
               "Title": "IMedicoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IMedicoRepository.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IMedicoRepository.cs",
@@ -756,12 +1050,11 @@
               "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IMedicoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T20:18:21.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T20:18:21.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 55,
               "Title": "IDisponibilidadRepository.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IDisponibilidadRepository.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IDisponibilidadRepository.cs",
@@ -769,64 +1062,47 @@
               "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IDisponibilidadRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T20:17:33.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T20:17:33.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 59,
               "Title": "IBaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IBaseRepository.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IBaseRepository.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IBaseRepository.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IBaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA6wBAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T19:34:09.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T19:34:09.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 62,
               "Title": "Pago.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Pago.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\Pago.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Pago.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Entities\\Pago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAEBTwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:20:27.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T20:20:27.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 63,
               "Title": "Medico.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Medico.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\Medico.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Medico.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Entities\\Medico.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAIBJwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T19:23:35.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T19:23:35.915Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Paciente.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Paciente.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\Paciente.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Paciente.cs",
-              "RelativeToolTip": "CitasMedicas.Core\\Entities\\Paciente.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T01:12:21.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 42,
               "Title": "MedicoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\MedicoRepository.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Repositories\\MedicoRepository.cs",
@@ -834,90 +1110,59 @@
               "RelativeToolTip": "CitasMedicas.Infrastructure\\Repositories\\MedicoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T03:19:38.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T03:19:38.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PacienteEnfermedad.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\PacienteEnfermedad.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\PacienteEnfermedad.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\PacienteEnfermedad.cs",
-              "RelativeToolTip": "CitasMedicas.Core\\Entities\\PacienteEnfermedad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T15:39:14.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 65,
               "Title": "Cita.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Cita.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\Cita.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Cita.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Entities\\Cita.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAEBTwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:11:32.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T20:11:32.585Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 40,
               "Title": "MedicoDtoValidator.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\MedicoDtoValidator.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Validators\\MedicoDtoValidator.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\MedicoDtoValidator.cs",
               "RelativeToolTip": "CitasMedicas.Infrastructure\\Validators\\MedicoDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAIBJwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T03:14:44.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T03:14:44.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 64,
               "Title": "Disponibilidad.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Disponibilidad.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\Disponibilidad.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Disponibilidad.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Entities\\Disponibilidad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAIBWwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:19:10.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T20:19:10.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 51,
               "Title": "IPacienteService.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IPacienteService.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IPacienteService.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IPacienteService.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IPacienteService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T01:20:05.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T01:20:05.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Enfermedad.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Enfermedad.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Core\\Entities\\Enfermedad.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Entities\\Enfermedad.cs",
-              "RelativeToolTip": "CitasMedicas.Core\\Entities\\Enfermedad.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T15:37:30.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 75,
               "Title": "DisponibilidadRepository.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Repositories\\DisponibilidadRepository.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Repositories\\DisponibilidadRepository.cs",
@@ -925,86 +1170,67 @@
               "RelativeToolTip": "CitasMedicas.Infrastructure\\Repositories\\DisponibilidadRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T18:42:22.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T18:42:22.834Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 52,
               "Title": "IMedicoService.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IMedicoService.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\Interfaces\\IMedicoService.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\Interfaces\\IMedicoService.cs",
               "RelativeToolTip": "CitasMedicas.Core\\Interfaces\\IMedicoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T17:03:16.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-16T17:03:16.188Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 41,
               "Title": "DisponibilidadDtoValidator.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\DisponibilidadDtoValidator.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Validators\\DisponibilidadDtoValidator.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\DisponibilidadDtoValidator.cs",
               "RelativeToolTip": "CitasMedicas.Infrastructure\\Validators\\DisponibilidadDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAIBJwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T21:48:52.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T21:48:52.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 68,
               "Title": "MedicoDto.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\DTOs\\MedicoDto.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\DTOs\\MedicoDto.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\DTOs\\MedicoDto.cs",
               "RelativeToolTip": "CitasMedicas.Core\\DTOs\\MedicoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T19:31:58.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T19:31:58.768Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CitasMedicasContext.cs",
-              "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Data\\CitasMedicasContext.cs",
-              "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Data\\CitasMedicasContext.cs",
-              "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Data\\CitasMedicasContext.cs",
-              "RelativeToolTip": "CitasMedicas.Infrastructure\\Data\\CitasMedicasContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T15:14:13.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 39,
               "Title": "PacienteDtoValidator.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\PacienteDtoValidator.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Infrastructure\\Validators\\PacienteDtoValidator.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Infrastructure\\Validators\\PacienteDtoValidator.cs",
               "RelativeToolTip": "CitasMedicas.Infrastructure\\Validators\\PacienteDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAIBJwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T04:01:56.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T04:01:56.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 67,
               "Title": "PacienteDto.cs",
               "DocumentMoniker": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\DTOs\\PacienteDto.cs",
               "RelativeDocumentMoniker": "CitasMedicas.Core\\DTOs\\PacienteDto.cs",
               "ToolTip": "C:\\Users\\Arrazola\\Documents\\CitasMedicasOnline\\CitasMedicas.Core\\DTOs\\PacienteDto.cs",
               "RelativeToolTip": "CitasMedicas.Core\\DTOs\\PacienteDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T00:41:36.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T00:41:36.818Z"
             }
           ]
         }

@@ -12,14 +12,14 @@ namespace CitasMedicas.Infrastructure.Mappings
 
             CreateMap<Paciente, PacienteDto>().ReverseMap();
 
-            CreateMap<Disponibilidad, Disponibilidad>()
-                .ReverseMap();
+            CreateMap<Disponibilidad, Disponibilidad>().ReverseMap();
 
-            CreateMap<Enfermedad, Enfermedad>()
-                .ReverseMap();
+            CreateMap<Cita, ReservaCitaDto>()
+                .ForMember(dest => dest.CorreoPaciente, opt => opt.MapFrom(src => src.Paciente.Correo))
+                .ForMember(dest => dest.Motivo, opt => opt.MapFrom(src => src.Motivo))
+                .ForMember(dest => dest.DisponibilidadId, opt => opt.MapFrom(src => src.DisponibilidadId));
 
-            CreateMap<PacienteEnfermedad, PacienteEnfermedad>()
-                .ReverseMap();
+            CreateMap<Security, SecurityDto>().ReverseMap();
         }
     }
 }

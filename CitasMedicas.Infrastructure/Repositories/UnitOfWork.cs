@@ -14,12 +14,14 @@ namespace CitasMedicas.Infrastructure.Repositories
         private readonly CitasMedicasContext _context;
         private IDbContextTransaction? _efTransaction;
         private readonly IDapperContext? _dapper;
+        private ISecurityRepository? _securityRepository;
 
         private IBaseRepository<Medico>? _medicoRepository;
         private IBaseRepository<Paciente>? _pacienteRepository;
         private IBaseRepository<Disponibilidad>? _disponibilidadRepository;
         private IBaseRepository<Cita>? _citaRepository;
         private IBaseRepository<Pago>? _pagoRepository;
+
 
         public UnitOfWork(CitasMedicasContext context, IDapperContext? dapper = null)
         {
@@ -41,6 +43,8 @@ namespace CitasMedicas.Infrastructure.Repositories
 
         public IBaseRepository<Pago> PagoRepository =>
             _pagoRepository ??= new BaseRepository<Pago>(_context);
+        public ISecurityRepository SecurityRepository =>
+            _securityRepository ??= new SecurityRepository(_context);
 
         public void SaveChanges()
         {

@@ -16,7 +16,7 @@ namespace CitasMedicas.Core.Entities
         public string Direccion { get; set; } = null!;
         public decimal Saldo { get; set; } = 0;
         public ICollection<Cita>? Citas { get; set; }
-        public ICollection<PacienteEnfermedad>? PacientesEnfermedades { get; set; }
+       
 
     }
 }
