@@ -1,29 +1,30 @@
-﻿using System;
+﻿using CitasMedicas.Core.Entities;
+using System;
 using System.Data;
 using System.Threading.Tasks;
-using CitasMedicas.Core.Entities;
 
 namespace CitasMedicas.Core.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
-        IBaseRepository<Medico> MedicoRepository { get; }
-        IBaseRepository<Paciente> PacienteRepository { get; }
-        IBaseRepository<Disponibilidad> DisponibilidadRepository { get; }
-        IBaseRepository<Cita> CitaRepository { get; }
-        IBaseRepository<Pago> PagoRepository { get; }
+        IMedicoRepository Medico { get; }
+        IPacienteRepository Paciente { get; }
+        IDisponibilidadRepository Disponibilidad { get; }
+        ICitaRepository Cita { get; }
+        IPagoRepository Pago { get; }
         ISecurityRepository SecurityRepository { get; }
 
-        void SaveChanges();
-        Task SaveChangesAsync();
+        IDapperContext Dapper { get; }
 
-        // --- Manejo de transacciones EF ---
+        Task SaveChangesAsync();
+        void SaveChanges();
+
         Task BeginTransactionAsync();
         Task CommitAsync();
         Task RollbackAsync();
 
-        // --- Soporte para Dapper ---
         IDbConnection? GetDbConnection();
         IDbTransaction? GetDbTransaction();
+
     }
 }

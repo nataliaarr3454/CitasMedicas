@@ -1,5 +1,6 @@
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\appsettings.json
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\appsettings.Production.json
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\CitasMedicas.Api.staticwebassets.endpoints.json
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\CitasMedicas.Api.exe
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\CitasMedicas.Api.deps.json
@@ -282,6 +283,7 @@ C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\CitasMedicas.Core.dll
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\CitasMedicas.Infrastructure.dll
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\CitasMedicas.Core.pdb
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\CitasMedicas.Core.xml
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\bin\Debug\net9.0\CitasMedicas.Infrastructure.pdb
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\obj\Debug\net9.0\CitasMedicas.Api.csproj.AssemblyReference.cache
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Api\obj\Debug\net9.0\rpswa.dswa.cache.json

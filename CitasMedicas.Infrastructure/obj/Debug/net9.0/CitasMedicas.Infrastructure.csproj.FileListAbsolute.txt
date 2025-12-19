@@ -4,6 +4,7 @@ C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\D
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\Debug\net9.0\CitasMedicas.Infrastructure.pdb
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\Debug\net9.0\CitasMedicas.Core.dll
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\Debug\net9.0\CitasMedicas.Core.pdb
+C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\bin\Debug\net9.0\CitasMedicas.Core.xml
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Arrazola\Documents\CitasMedicasOnline\CitasMedicas.Infrastructure\obj\Debug\net9.0\CitasMedicas.Infrastructure.AssemblyInfoInputs.cache

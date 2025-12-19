@@ -4,64 +4,68 @@
         <name>CitasMedicas.Api</name>
     </assembly>
     <members>
-        <member name="T:CitasMedicas.Api.Controllers.v1.CitaController">
+        <member name="T:CitasMedicas.Api.Controllers.SecurityController">
             <summary>
-            Controlador que gestiona las operaciones relacionadas con las citas médicas (v1).
+            Controlador encargado de la gestion de usuarios del sistema.
+            medico,paciente y administrados
             </summary>
             <remarks>
-            Permite reservar citas, listar citas con paginación y filtrar según diferentes criterios.
+            Permite registrar usuarios en la tabla de seguridad.
+            
+            Acceso restringido:
+            - Solo usuarios con rol <b>Administrador</b> pueden acceder a este controlador.
+            
             </remarks>
         </member>
-        <member name="M:CitasMedicas.Api.Controllers.v1.CitaController.Reservar(CitasMedicas.Core.DTOs.ReservaCitaDto)">
+        <member name="M:CitasMedicas.Api.Controllers.SecurityController.Post(CitasMedicas.Core.DTOs.SecurityDto)">
             <summary>
-            Registra una nueva cita médica en el sistema (v1).
-            </summary>
-        </member>
-        <member name="M:CitasMedicas.Api.Controllers.v1.CitaController.Listar(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
-            <summary>
-            Recupera una lista paginada de citas médicas según los filtros especificados (v1).
-            </summary>
-        </member>
-        <member name="T:CitasMedicas.Api.Controllers.v2.CitaController">
-            <summary>
-            Controlador que gestiona las operaciones relacionadas con las citas médicas (v2).
+            Registra un nuevo usuario del sistema.
             </summary>
             <remarks>
-            Versión mejorada que incluye filtros avanzados y estadísticas.
+            Este endpoint permite crear usuarios que podran autenticarse en la API.
+            
+            Reglas:
+            - Solo el rol <b>Administrador</b> puede registrar usuarios.
+            - La contraseña se almacena de forma segura utilizando hash.
+            - El rol define los permisos del usuario.
+            
+            Caso de uso:
+            Registro de usuarios administrativos, veterinarios o recepcionistas.
             </remarks>
+            <param name="securityDto">Datos del usuario a registrar.</param>
+            <returns>Informacion del usuario registrado.</returns>
         </member>
-        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.Reservar(CitasMedicas.Core.DTOs.ReservaCitaDto)">
+        <member name="T:CitasMedicas.Api.Controllers.TokenController">
             <summary>
-            Registra una nueva cita médica en el sistema (v2).
+            Controlador responsable de la autenticacion y generacion de tokens JWT.
             </summary>
             <remarks>
-            Versión mejorada con validaciones adicionales y mejor respuesta
+            Este controlador permite a los usuarios autenticarse y obtener un token JWT
+            que sera utilizado para acceder a los endpoints protegidos de la API.
+            
+            El token incluye informacion del usuario y su rol.
             </remarks>
         </member>
-        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.Listar(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+        <member name="M:CitasMedicas.Api.Controllers.TokenController.Authentication(CitasMedicas.Core.Entities.UserLogin)">
             <summary>
-            Recupera una lista paginada de citas médicas según los filtros especificados (v2).
+            Autentica un usuario y genera un token JWT.
             </summary>
             <remarks>
-            Versión mejorada con filtros avanzados y estadísticas.
+            Este endpoint valida las credenciales del usuario
+            devuelve un token JWT valido por un tiempo determinado.
+            
+            El token incluye:
+            - Login, Nombre, Rol del usuario
+            
+            El token debe enviarse en el header:
+            Authorization: Bearer {token}
             </remarks>
+            <param name="userLogin">Credenciales del usuario.</param>
+            <returns>Token JWT generado.</returns>
         </member>
-        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.GetCitasDtoMapper(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+        <member name="M:CitasMedicas.Api.Controllers.TokenController.GenerateToken(CitasMedicas.Core.Entities.Security)">
             <summary>
-            Recupera una lista paginada de citas como DTOs usando AutoMapper.
-            </summary>
-            <remarks>
-            Convierte los objetos <see cref="T:CitasMedicas.Core.Entities.Cita"/> en <see cref="T:CitasMedicas.Core.DTOs.ReservaCitaDto"/> utilizando AutoMapper.  
-            Retorna los resultados junto con los datos de paginación.
-            </remarks>
-            <param name="filters">Filtros aplicables para la búsqueda y paginación.</param>
-            <returns>Lista paginada de objetos <see cref="T:CitasMedicas.Core.DTOs.ReservaCitaDto"/>.</returns>
-            <response code="200">Citas obtenidas correctamente.</response>
-            <response code="500">Error interno del servidor.</response>
-        </member>
-        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.Estadisticas">
-            <summary>
-            Obtiene estadísticas de citas (nuevo en v2).
+            Genera el token JWT a partir de los datos del usuario.
             </summary>
         </member>
     </members>

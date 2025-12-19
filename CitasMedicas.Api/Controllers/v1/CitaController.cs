@@ -1,50 +1,50 @@
-﻿using CitasMedicas.Api.Responses;
+﻿using AutoMapper;
+using CitasMedicas.Api.Responses;
+using CitasMedicas.Core.CustomEntities;
 using CitasMedicas.Core.DTOs;
 using CitasMedicas.Core.Entities;
+using CitasMedicas.Core.Enums;
 using CitasMedicas.Core.Exceptions;
 using CitasMedicas.Core.Interfaces;
 using CitasMedicas.Core.QueryFilters;
-using CitasMedicas.Core.CustomEntities;
-using CitasMedicas.Core.Enums;
+using CitasMedicas.Infrastructure.Validators;
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Net;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace CitasMedicas.Api.Controllers.v1
 {
-    /// <summary>
-    /// Controlador que gestiona las operaciones relacionadas con las citas médicas (v1).
-    /// </summary>
-    /// <remarks>
-    /// Permite reservar citas, listar citas con paginación y filtrar según diferentes criterios.
-    /// </remarks>
     [Authorize(Roles = $"{nameof(RoleType.Administrador)},{nameof(RoleType.Medico)},{nameof(RoleType.Paciente)}")]
-    [Produces("application/json")]
-    [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
+    [ApiVersion("1.0")]
+    [Produces("application/json")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class CitaController : ControllerBase
     {
         private readonly ICitaService _service;
         private readonly IValidator<ReservaCitaDto> _validator;
+        private readonly IDapperContext _dapper;
+        private readonly IMapper _mapper;
 
-        public CitaController(ICitaService service, IValidator<ReservaCitaDto> validator)
+        public CitaController(
+            ICitaService service,
+            IDapperContext dapper,
+            IMapper mapper,
+            IValidator<ReservaCitaDto> validator)
         {
             _service = service;
+            _dapper = dapper;
+            _mapper = mapper;
             _validator = validator;
         }
 
-        /// <summary>
-        /// Registra una nueva cita médica en el sistema (v1).
-        /// </summary>
         [HttpPost("reservar")]
-        [ProducesResponseType((int)HttpStatusCode.Created, Type = typeof(ApiResponse<Cita>))]
+        [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [SwaggerOperation(Summary = "Registrar cita", Description = "Registra una cita ocupando una disponibilidad.")]
         public async Task<IActionResult> Reservar([FromBody] ReservaCitaDto dto)
         {
             var validation = await _validator.ValidateAsync(dto);
@@ -53,7 +53,10 @@ namespace CitasMedicas.Api.Controllers.v1
                 var errores = validation.Errors.Select(e => e.ErrorMessage).ToList();
                 return BadRequest(new ApiResponse<object>(
                     new { errores },
-                    new[] { new Message { Type = TypeMessage.error.ToString(), Description = "Errores de validación." } }
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.error.ToString(), Description = "Errores de validación." }
+                    }
                 ));
             }
 
@@ -62,26 +65,32 @@ namespace CitasMedicas.Api.Controllers.v1
                 var cita = await _service.ReservarCitaAsync(dto);
                 return StatusCode(201, new ApiResponse<Cita>(
                     cita,
-                    new[] { new Message { Type = TypeMessage.success.ToString(), Description = "Cita reservada correctamente." } }
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.success.ToString(), Description = "Cita reservada correctamente." }
+                    }
                 ));
             }
             catch (BusinessException bex)
             {
-                return StatusCode(bex.StatusCode, new ApiResponse<string>(
-                    default!,
-                    new[] { new Message { Type = TypeMessage.error.ToString(), Description = bex.Message } }
+                return StatusCode(bex.StatusCode, new ApiResponse<object>(
+                    null,
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.error.ToString(), Description = bex.Message }
+                    }
                 ));
             }
         }
 
-        /// <summary>
-        /// Recupera una lista paginada de citas médicas según los filtros especificados (v1).
-        /// </summary>
         [HttpGet("listar")]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<Cita>>))]
+        [SwaggerOperation(Summary = "Filtrar citas médicas", Description = "Obtiene un listado paginado de citas con filtros.")]
         public async Task<IActionResult> Listar([FromQuery] CitaQueryFilter filters)
         {
             var result = await _service.GetAllCitasResponseAsync(filters);
+
+            var citas = result.Pagination?.Cast<Cita>().ToList() ?? new List<Cita>();
 
             var pagination = result.Pagination != null ? new Pagination
             {
@@ -93,11 +102,11 @@ namespace CitasMedicas.Api.Controllers.v1
                 HasPreviousPage = result.Pagination.HasPreviousPage
             } : null;
 
-            var response = new ApiResponse<object>(
-                result.Pagination,
-                pagination!,
-                result.Messages!
-            );
+            var response = new ApiResponse<IEnumerable<Cita>>(citas)
+            {
+                Pagination = pagination,
+                Messages = result.Messages?.ToList() ?? new List<Message>()
+            };
 
             return StatusCode((int)result.StatusCode, response);
         }

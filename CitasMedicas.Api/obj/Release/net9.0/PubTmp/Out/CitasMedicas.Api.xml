@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CitasMedicas.Api</name>
+    </assembly>
+    <members>
+        <member name="T:CitasMedicas.Api.Controllers.v1.CitaController">
+            <summary>
+            Controlador que gestiona las operaciones relacionadas con las citas médicas (v1).
+            </summary>
+            <remarks>
+            Permite reservar citas, listar citas con paginación y filtrar según diferentes criterios.
+            </remarks>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.v1.CitaController.Reservar(CitasMedicas.Core.DTOs.ReservaCitaDto)">
+            <summary>
+            Registra una nueva cita médica en el sistema (v1).
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.v1.CitaController.Listar(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+            <summary>
+            Recupera una lista paginada de citas médicas según los filtros especificados (v1).
+            </summary>
+        </member>
+        <member name="T:CitasMedicas.Api.Controllers.v2.CitaController">
+            <summary>
+            Controlador que gestiona las operaciones relacionadas con las citas médicas (v2).
+            </summary>
+            <remarks>
+            Versión mejorada que incluye filtros avanzados y estadísticas.
+            </remarks>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.Reservar(CitasMedicas.Core.DTOs.ReservaCitaDto)">
+            <summary>
+            Registra una nueva cita médica en el sistema (v2).
+            </summary>
+            <remarks>
+            Versión mejorada con validaciones adicionales y mejor respuesta
+            </remarks>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.Listar(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+            <summary>
+            Recupera una lista paginada de citas médicas según los filtros especificados (v2).
+            </summary>
+            <remarks>
+            Versión mejorada con filtros.
+            </remarks>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.GetCitasDtoMapper(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+            <summary>
+            Recupera una lista paginada de citas como DTOs usando AutoMapper.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Api.Controllers.v2.CitaController.Cancelar(System.Int32,CitasMedicas.Core.DTOs.CancelarCitaDto)">
+            <summary>
+            Cancela una cita médica existente (v2).
+            </summary>
+            <remarks>
+            Versión mejorada con información detallada sobre el reembolso y tiempos.
+            </remarks>
+        </member>
+    </members>
+</doc>

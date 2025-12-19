@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CitasMedicas.Core</name>
+    </assembly>
+    <members>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.GetAllCitasResponseAsync(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+            <summary>
+            Obtiene citas aplicando filtros opcionales.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.ReservarCitaAsync(CitasMedicas.Core.DTOs.ReservaCitaDto)">
+            <summary>
+            Reserva una nueva cita a partir del DTO recibido.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.GetCitaAsync(System.Int32)">
+            <summary>
+            Obtiene una cita por su Id.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.UpdateCitaAsync(CitasMedicas.Core.Entities.Cita)">
+            <summary>
+            Actualiza una cita existente.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.DeleteCitaAsync(System.Int32)">
+            <summary>
+            Elimina una cita existente.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.GetAllCitasDapperAsync">
+            <summary>
+            Obtiene todas las citas vía Dapper (opcional).
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.CancelarCitaAsync(System.Int32,System.String)">
+            <sumary>
+             Cancela una cita solo con el id de la cita si la cancelacion es antes de las 24 horas
+             y se reeembolsa el dinero o se cancela el pago
+             y si es menos de las 24 horas no se cancela la cita
+             </sumary>
+        </member>
+        <member name="T:CitasMedicas.Core.QueryFilters.CitaQueryFilter">
+            <summary>
+            Filtros para consulta de citas médicas
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.CitaQueryFilter.PacienteId">
+            <summary>
+            ID del paciente
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.CitaQueryFilter.MedicoId">
+            <summary>
+            ID del médico
+            </summary>
+            <example>2</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.CitaQueryFilter.Estado">
+            <summary>
+            Estado de la cita (Ej: Reservada, Completada, Cancelada)
+            </summary>
+            <example>Reservada</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.CitaQueryFilter.FechaCita">
+            <summary>
+            Fecha de la cita
+            </summary>
+            <example>2025-01-15</example>
+        </member>
+        <member name="T:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter">
+            <summary>
+            Filtros para consulta de disponibilidades médicas
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter.MedicoId">
+            <summary>
+            ID del médico
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter.Fecha">
+            <summary>
+            Fecha de la disponibilidad
+            </summary>
+            <example>2025-01-15</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter.HoraInicio">
+            <summary>
+            Hora de inicio de la disponibilidad
+            </summary>
+            <example>09:00:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter.HoraFin">
+            <summary>
+            Hora de fin de la disponibilidad
+            </summary>
+            <example>10:00:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter.CostoCita">
+            <summary>
+            Costo de la cita
+            </summary>
+            <example>150.00</example>
+        </member>
+        <member name="T:CitasMedicas.Core.QueryFilters.MedicoQueryFilter">
+            <summary>
+            Filtros para consulta de médicos
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.MedicoQueryFilter.MedicoId">
+            <summary>
+            ID del médico
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.MedicoQueryFilter.Nombre">
+            <summary>
+            Nombre del médico
+            </summary>
+            <example>Juan</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.MedicoQueryFilter.Especialidad">
+            <summary>
+            Especialidad del médico
+            </summary>
+            <example>Cardiología</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.MedicoQueryFilter.Telefono">
+            <summary>
+            Teléfono del médico
+            </summary>
+            <example>77788899</example>
+        </member>
+    </members>
+</doc>

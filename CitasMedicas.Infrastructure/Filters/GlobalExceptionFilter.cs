@@ -1,9 +1,13 @@
 ﻿using CitasMedicas.Core.CustomEntities;
 using CitasMedicas.Core.Exceptions;
+using CitasMedicas.Infrastructure.Validators;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
+using FluentValidation;
+using System;
+using System.Threading.Tasks;
 
 namespace CitasMedicas.Infrastructure.Filters
 {

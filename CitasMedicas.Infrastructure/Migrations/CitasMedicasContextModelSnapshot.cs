@@ -33,9 +33,6 @@ namespace CitasMedicas.Infrastructure.Migrations
                     b.Property<int>("DisponibilidadId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("DisponibilidadId1")
-                        .HasColumnType("int");
-
                     b.Property<string>("Estado")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -52,9 +49,6 @@ namespace CitasMedicas.Infrastructure.Migrations
                     b.Property<int>("MedicoId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("MedicoId1")
-                        .HasColumnType("int");
-
                     b.Property<string>("Motivo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -62,22 +56,13 @@ namespace CitasMedicas.Infrastructure.Migrations
                     b.Property<int>("PacienteId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PacienteId1")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("DisponibilidadId");
 
-                    b.HasIndex("DisponibilidadId1");
-
                     b.HasIndex("MedicoId");
 
-                    b.HasIndex("MedicoId1");
-
                     b.HasIndex("PacienteId");
-
-                    b.HasIndex("PacienteId1");
 
                     b.ToTable("Citas");
                 });
@@ -95,7 +80,10 @@ namespace CitasMedicas.Infrastructure.Migrations
 
                     b.Property<string>("Estado")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasDefaultValue("Disponible");
 
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
@@ -113,28 +101,7 @@ namespace CitasMedicas.Infrastructure.Migrations
 
                     b.HasIndex("MedicoId");
 
-                    b.ToTable("Disponibilidades");
-                });
-
-            modelBuilder.Entity("CitasMedicas.Core.Entities.Enfermedad", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Descripcion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Enfermedades");
+                    b.ToTable("Disponibilidades", (string)null);
                 });
 
             modelBuilder.Entity("CitasMedicas.Core.Entities.Medico", b =>
@@ -182,64 +149,41 @@ namespace CitasMedicas.Infrastructure.Migrations
 
                     b.Property<string>("Apellido")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Correo")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Direccion")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<int>("Edad")
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<decimal>("Saldo")
                         .HasColumnType("decimal(10,2)");
 
                     b.Property<string>("Telefono")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Pacientes");
-                });
+                    b.HasIndex("Correo")
+                        .IsUnique();
 
-            modelBuilder.Entity("CitasMedicas.Core.Entities.PacienteEnfermedad", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("EnfermedadId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Medicacion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PacienteId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Tratamiento")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EnfermedadId");
-
-                    b.HasIndex("PacienteId");
-
-                    b.ToTable("PacientesEnfermedades");
+                    b.ToTable("Pacientes", (string)null);
                 });
 
             modelBuilder.Entity("CitasMedicas.Core.Entities.Pago", b =>
@@ -255,10 +199,15 @@ namespace CitasMedicas.Infrastructure.Migrations
 
                     b.Property<string>("EstadoPago")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasDefaultValue("Pendiente");
 
                     b.Property<DateTime>("FechaPago")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<decimal>("Monto")
                         .HasColumnType("decimal(10,2)");
@@ -268,40 +217,64 @@ namespace CitasMedicas.Infrastructure.Migrations
                     b.HasIndex("CitaId")
                         .IsUnique();
 
-                    b.ToTable("Pagos");
+                    b.ToTable("Pagos", (string)null);
+                });
+
+            modelBuilder.Entity("CitasMedicas.Core.Entities.Security", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Login")
+                        .IsUnique();
+
+                    b.ToTable("Security", (string)null);
                 });
 
             modelBuilder.Entity("CitasMedicas.Core.Entities.Cita", b =>
                 {
                     b.HasOne("CitasMedicas.Core.Entities.Disponibilidad", "Disponibilidad")
-                        .WithMany()
+                        .WithMany("Citas")
                         .HasForeignKey("DisponibilidadId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("CitasMedicas.Core.Entities.Disponibilidad", null)
-                        .WithMany("Citas")
-                        .HasForeignKey("DisponibilidadId1");
-
                     b.HasOne("CitasMedicas.Core.Entities.Medico", "Medico")
-                        .WithMany()
+                        .WithMany("Citas")
                         .HasForeignKey("MedicoId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("CitasMedicas.Core.Entities.Medico", null)
-                        .WithMany("Citas")
-                        .HasForeignKey("MedicoId1");
-
                     b.HasOne("CitasMedicas.Core.Entities.Paciente", "Paciente")
-                        .WithMany()
+                        .WithMany("Citas")
                         .HasForeignKey("PacienteId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-
-                    b.HasOne("CitasMedicas.Core.Entities.Paciente", null)
-                        .WithMany("Citas")
-                        .HasForeignKey("PacienteId1");
 
                     b.Navigation("Disponibilidad");
 
@@ -319,25 +292,6 @@ namespace CitasMedicas.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Medico");
-                });
-
-            modelBuilder.Entity("CitasMedicas.Core.Entities.PacienteEnfermedad", b =>
-                {
-                    b.HasOne("CitasMedicas.Core.Entities.Enfermedad", "Enfermedad")
-                        .WithMany("PacientesEnfermedades")
-                        .HasForeignKey("EnfermedadId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CitasMedicas.Core.Entities.Paciente", "Paciente")
-                        .WithMany("PacientesEnfermedades")
-                        .HasForeignKey("PacienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Enfermedad");
-
-                    b.Navigation("Paciente");
                 });
 
             modelBuilder.Entity("CitasMedicas.Core.Entities.Pago", b =>
@@ -361,11 +315,6 @@ namespace CitasMedicas.Infrastructure.Migrations
                     b.Navigation("Citas");
                 });
 
-            modelBuilder.Entity("CitasMedicas.Core.Entities.Enfermedad", b =>
-                {
-                    b.Navigation("PacientesEnfermedades");
-                });
-
             modelBuilder.Entity("CitasMedicas.Core.Entities.Medico", b =>
                 {
                     b.Navigation("Citas");
@@ -376,8 +325,6 @@ namespace CitasMedicas.Infrastructure.Migrations
             modelBuilder.Entity("CitasMedicas.Core.Entities.Paciente", b =>
                 {
                     b.Navigation("Citas");
-
-                    b.Navigation("PacientesEnfermedades");
                 });
 #pragma warning restore 612, 618
         }

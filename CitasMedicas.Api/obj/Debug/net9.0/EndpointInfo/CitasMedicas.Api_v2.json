@@ -4,7 +4,7 @@
     "title": "Citas Medicas API - v2",
     "description": "API para gestion de citas medicas - Version 2.0 con mejoras",
     "contact": {
-      "name": "Equipo de Desarrollo UCB",
+      "name": "Equipo de Desarrollo citas medicas",
       "email": "natalia.arrazola@ucb.edu.bo"
     },
     "version": "v2"
@@ -13,10 +13,10 @@
   "components": {
     "securitySchemes": {
       "Bearer": {
-        "type": "http",
+        "type": "apiKey",
         "description": "Introduce el token JWT en el formato: Bearer {token}",
-        "scheme": "Bearer",
-        "bearerFormat": "JWT"
+        "name": "Authorization",
+        "in": "header"
       }
     }
   },

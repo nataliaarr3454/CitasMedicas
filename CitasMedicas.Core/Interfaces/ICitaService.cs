@@ -13,8 +13,6 @@ namespace CitasMedicas.Core.Interfaces
         /// Obtiene citas aplicando filtros opcionales.
         /// </summary>
         Task<ResponseData> GetAllCitasResponseAsync(CitaQueryFilter filters);
-
-
         /// <summary>
         /// Reserva una nueva cita a partir del DTO recibido.
         /// </summary>
@@ -40,6 +38,11 @@ namespace CitasMedicas.Core.Interfaces
         /// </summary>
         Task<IEnumerable<Cita>> GetAllCitasDapperAsync();
 
-    
+        ///<sumary>
+        /// Cancela una cita solo con el id de la cita si la cancelacion es antes de las 24 horas
+        /// y se reeembolsa el dinero o se cancela el pago
+        /// y si es menos de las 24 horas no se cancela la cita
+        /// </sumary>
+        Task<Cita> CancelarCitaAsync(int id, string? motivoCancelacion = null);
     }
 }

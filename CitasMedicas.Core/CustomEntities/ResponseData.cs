@@ -5,8 +5,8 @@ namespace CitasMedicas.Core.CustomEntities
 {
     public class ResponseData
     {
-        public PagedList<object>? Pagination { get; set; }
-        public Message[]? Messages { get; set; }
+        public PagedList<object> Pagination { get; set; } = null!;
+        public List<Message> Messages { get; set; } = new List<Message>();
 
         [JsonIgnore]
         public HttpStatusCode StatusCode { get; set; }

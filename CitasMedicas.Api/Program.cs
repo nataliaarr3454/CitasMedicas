@@ -1,4 +1,5 @@
 using AutoMapper;
+using CitasMedicas.Core.CustomEntities;
 using CitasMedicas.Core.DTOs;
 using CitasMedicas.Core.Entities;
 using CitasMedicas.Core.Enums;
@@ -16,18 +17,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Swashbuckle.AspNetCore.Annotations;
+using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Reflection;
 using System.Text;
-using CitasMedicas.Core.CustomEntities;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configuración
 builder.Configuration.Sources.Clear();
 builder.Configuration
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true);
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+    .AddEnvironmentVariables();
 
 if (builder.Environment.IsDevelopment())
 {
@@ -35,32 +37,69 @@ if (builder.Environment.IsDevelopment())
     Console.WriteLine("User Secrets habilitados para desarrollo");
 }
 
-builder.Configuration.AddEnvironmentVariables();
+// ============================================================
+// CONFIGURACION DE BASE DE DATOS
+// ============================================================
+var connectionString = builder.Configuration.GetConnectionString("ConnectionSqlServer");
+builder.Services.AddDbContext<CitasMedicasContext>(options =>
+    options.UseSqlServer(connectionString));
 
-Console.WriteLine($"Ambiente: {builder.Environment.EnvironmentName}");
-Console.WriteLine($"Aplicacion: {builder.Environment.ApplicationName}");
+// ============================================================
+// CONFIGURACION AUTOMAPPER
+// ============================================================
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-var secretKey = builder.Configuration["Authentication:SecretKey"];
-var issuer = builder.Configuration["Authentication:Issuer"];
-var audience = builder.Configuration["Authentication:Audience"];
+builder.Services.Configure<PasswordOptions>(builder.Configuration.GetSection("PasswordOptions"));
 
-if (string.IsNullOrEmpty(secretKey))
+// ============================================================
+// INYECCION DE DEPENDENCIAS
+// ============================================================
+builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+builder.Services.AddScoped<IMedicoService, MedicoService>();
+builder.Services.AddScoped<IPacienteService, PacienteService>();
+builder.Services.AddScoped<IDisponibilidadService, DisponibilidadService>();
+builder.Services.AddScoped<ICitaService, CitaService>();
+builder.Services.AddScoped<ISecurityService, SecurityService>();
+builder.Services.AddSingleton<IPasswordService, PasswordService>();
+
+
+// ============================================================
+// DAPPER
+// ============================================================
+builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
+builder.Services.AddScoped<IDapperContext, DapperContext>();
+
+// ============================================================
+// VALIDACION GLOBAL
+// ============================================================
+builder.Services.AddValidatorsFromAssemblyContaining <ReservaCitaDtoValidator>();
+
+builder.Services.AddControllers(options =>
 {
-    Console.WriteLine("Advertencia: Authentication:SecretKey no configurada");
-    Console.WriteLine("En desarrollo, use: dotnet user-secrets set \"Authentication:SecretKey\" \"tu_clave_aqui\"");
-    Console.WriteLine("En produccion, configure la variable de entorno: Authentication:SecretKey");
-}
-
-if (string.IsNullOrEmpty(issuer) || string.IsNullOrEmpty(audience))
+    options.Filters.Add<ValidationFilter>();
+    options.Filters.Add<GlobalExceptionFilter>();
+})
+    .AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.ReferenceLoopHandling =Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+    })
+.ConfigureApiBehaviorOptions(options =>
 {
-    Console.WriteLine("Advertencia: Issuer o Audience no configurados");
-}
+    options.SuppressModelStateInvalidFilter = true;
+});
+
+// ============================================================
+// AUTENTICACION JWT 
+// ============================================================
 
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(options =>
+})
+    .AddJwtBearer(options =>
 {
     options.TokenValidationParameters = new TokenValidationParameters
     {
@@ -68,139 +107,42 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = issuer ?? "https://localhost:7137/",
-        ValidAudience = audience ?? "https://localhost:7137/",
+        ValidIssuer = builder.Configuration["Authentication:Issuer"],
+        ValidAudience = builder.Configuration["Authentication:Audience"],
         IssuerSigningKey = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(secretKey ?? "DefaultKeyForDevelopmentOnly12345!")
-        ),
-        ClockSkew = TimeSpan.Zero
+            Encoding.UTF8.GetBytes(
+                builder.Configuration["Authentication:SecretKey"]
+            )
+        )
     };
-
-    Console.WriteLine("Autenticacion JWT configurada");
 });
+// Repositorios base
+builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 
-builder.Services.AddAuthorization(options =>
-{
-    options.AddPolicy("AdminOnly", policy =>
-        policy.RequireRole(RoleType.Administrador.ToString()));
+// Repositorios específicos
+builder.Services.AddScoped<IMedicoRepository, MedicoRepository>();
+builder.Services.AddScoped<IPacienteRepository, PacienteRepository>();
+builder.Services.AddScoped<IDisponibilidadRepository, DisponibilidadRepository>();
+builder.Services.AddScoped<ICitaRepository, CitaRepository>();
+builder.Services.AddScoped<IPagoRepository, PagoRepository>();
+builder.Services.AddScoped<ISecurityRepository, SecurityRepository>();
 
-    options.AddPolicy("MedicoOrAdmin", policy =>
-        policy.RequireRole(RoleType.Medico.ToString(), RoleType.Administrador.ToString()));
-
-    options.AddPolicy("PacienteOrAdmin", policy =>
-        policy.RequireRole(RoleType.Paciente.ToString(), RoleType.Administrador.ToString()));
-
-    options.FallbackPolicy = new AuthorizationPolicyBuilder()
-        .RequireAuthenticatedUser()
-        .Build();
-
-    Console.WriteLine("Politicas de autorizacion configuradas");
-});
-
-builder.Services.AddApiVersioning(options =>
-{
-    options.ReportApiVersions = true;
-    options.AssumeDefaultVersionWhenUnspecified = true;
-    options.DefaultApiVersion = new ApiVersion(1, 0);
-    options.ApiVersionReader = ApiVersionReader.Combine(
-        new UrlSegmentApiVersionReader(),
-        new HeaderApiVersionReader("x-api-version"),
-        new QueryStringApiVersionReader("api-version")
-    );
-});
-
-builder.Services.AddVersionedApiExplorer(options =>
-{
-    options.GroupNameFormat = "'v'VVV";
-    options.SubstituteApiVersionInUrl = true;
-});
-
-Console.WriteLine("Versionamiento de API configurado");
-
-builder.Services.AddScoped<IDbConnectionFactory, DbConnectionFactory>();
-builder.Services.AddScoped<IDapperContext, DapperContext>();
-
-var databaseProvider = builder.Configuration["DatabaseProvider"] ?? "SqlServer";
-Console.WriteLine($"Proveedor de base de datos: {databaseProvider}");
-
-if (databaseProvider == "SqlServer")
-{
-    var connectionString = builder.Configuration.GetConnectionString("ConnectionSqlServer");
-
-    if (string.IsNullOrEmpty(connectionString))
-    {
-        Console.WriteLine("Advertencia: ConnectionStrings:ConnectionSqlServer no configurada");
-        Console.WriteLine("Para desarrollo, use: dotnet user-secrets set \"ConnectionStrings:ConnectionSqlServer\" \"Server=localhost;Database=CitasMedicas;Trusted_Connection=True;TrustServerCertificate=True;\"");
-        Console.WriteLine("Para produccion, configure la variable de entorno: ConnectionStrings__ConnectionSqlServer");
-
-        if (builder.Environment.IsDevelopment())
-        {
-            connectionString = "Server=localhost;Database=CitasMedicas;Trusted_Connection=True;TrustServerCertificate=True;";
-            Console.WriteLine($"   Usando cadena de conexion de ejemplo: {connectionString.Substring(0, 30)}...");
-        }
-    }
-
-    builder.Services.AddDbContext<CitasMedicasContext>(options =>
-        options.UseSqlServer(connectionString));
-
-    Console.WriteLine("SQL Server configurado");
-}
-else
-{
-    throw new InvalidOperationException($"Proveedor de base de datos no soportado: {databaseProvider}. Solo se soporta 'SqlServer'");
-}
-
-builder.Services.AddAutoMapper(typeof(MappingProfile));
-Console.WriteLine("AutoMapper configurado");
-
-builder.Services.Configure<PasswordOptions>(
-    builder.Configuration.GetSection("PasswordOptions"));
-
-builder.Services.AddSingleton<IPasswordService, PasswordService>();
-
-// Validaciones FluentValidation
-builder.Services.AddScoped<IValidator<MedicoDto>, MedicoDtoValidator>();
-builder.Services.AddScoped<IValidator<PacienteDto>, PacienteDtoValidator>();
-builder.Services.AddScoped<IValidator<DisponibilidadDto>, DisponibilidadDtoValidator>();
-builder.Services.AddScoped<IValidator<ReservaCitaDto>, ReservaCitaDtoValidator>();
-builder.Services.AddScoped<IValidator<SecurityDto>, SecurityDtoValidator>();
-builder.Services.AddScoped<IValidator<UserLogin>, UserLoginValidator>();
-Console.WriteLine("Validadores FluentValidation registrados");
-
+// UnitOfWork
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<IMedicoService, MedicoService>();
-builder.Services.AddScoped<IPacienteService, PacienteService>();
-builder.Services.AddScoped<IDisponibilidadService, DisponibilidadService>();
-builder.Services.AddScoped<ICitaService, CitaService>();
-builder.Services.AddScoped<ISecurityService, SecurityService>();
-Console.WriteLine("Servicios registrados");
-
-builder.Services.AddControllers(options =>
-{
-    options.Filters.Add<GlobalExceptionFilter>();
-})
-.AddNewtonsoftJson(options =>
-{
-    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-})
-.ConfigureApiBehaviorOptions(options =>
-{
-    options.SuppressModelStateInvalidFilter = true;
-});
-
-Console.WriteLine("Controladores configurados");
-
+// ============================================================
+// SWAGGER Y VERSIONAMIENTO
+// ============================================================
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new()
+    options.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Citas Medicas API - v1",
+        Title = "Citas Medicas API",
         Version = "v1",
-        Description = "API para gestion de citas medicas - Version 1.0",
-        Contact = new()
+        Description = "Documentación de la API para gestionar el sistema de citas medicas - Version 1.0",
+        Contact = new OpenApiContact
         {
-            Name = "Equipo de Desarrollo UCB",
+            Name = "Equipo de Desarrollo Citas Medicas",
             Email = "natalia.arrazola@ucb.edu.bo"
         }
     });
@@ -212,15 +154,16 @@ builder.Services.AddSwaggerGen(options =>
         Description = "API para gestion de citas medicas - Version 2.0 con mejoras",
         Contact = new()
         {
-            Name = "Equipo de Desarrollo UCB",
+            Name = "Equipo de Desarrollo citas medicas",
             Email = "natalia.arrazola@ucb.edu.bo"
         }
     });
 
-    options.EnableAnnotations();
 
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    options.IncludeXmlComments(xmlPath);
+
     if (File.Exists(xmlPath))
     {
         options.IncludeXmlComments(xmlPath);
@@ -250,64 +193,68 @@ builder.Services.AddSwaggerGen(options =>
                maps?.Any(v => v.ToString() == version) == true;
     });
 
-    options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
+        Description = "Introduce el token JWT en el formato: Bearer {token}",
         Name = "Authorization",
-        Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http,
-        Scheme = "Bearer",
-        BearerFormat = "JWT",
-        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-        Description = "Introduce el token JWT en el formato: Bearer {token}"
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
     });
 
-    options.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
-            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            new OpenApiSecurityScheme
             {
-                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                Reference = new OpenApiReference
                 {
-                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Type = ReferenceType.SecurityScheme,
                     Id = "Bearer"
                 }
             },
-            Array.Empty<string>()
+            new string[] {}
         }
     });
 
-    Console.WriteLine("Swagger configurado");
+});
+
+// ----------------------------
+// Versionamiento (API Versioning)
+// ----------------------------
+builder.Services.AddApiVersioning(options =>
+{
+    options.ReportApiVersions = true;
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.ApiVersionReader = ApiVersionReader.Combine(
+        new UrlSegmentApiVersionReader(),
+        new HeaderApiVersionReader("x-api-version"),
+        new QueryStringApiVersionReader("api-version")
+    );
+});
+
+// ----------------------------
+// Explorador de Versiones (Swagger)
+// ----------------------------
+builder.Services.AddVersionedApiExplorer(options =>
+{
+    options.GroupNameFormat = "'v'VVV";
+    options.SubstituteApiVersionInUrl = true;
 });
 
 var app = builder.Build();
 
-Console.WriteLine("\nAplicacion construida exitosamente");
-Console.WriteLine("========================================");
-
+// ============================================================
+// SWAGGER UI
+// ============================================================
+app.Environment.IsDevelopment();
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
-    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Citas Medicas API v1");
-    options.SwaggerEndpoint("/swagger/v2/swagger.json", "Citas Medicas API v2");
-    options.RoutePrefix = string.Empty; 
-    options.DisplayRequestDuration();
-    options.EnableFilter();
-    options.EnableDeepLinking();
-    options.EnableTryItOutByDefault();
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Citas Medicas  API v1");
+    options.RoutePrefix = "swagger";
 });
-
-Console.WriteLine("Swagger UI disponible en la raiz (/)");
-
-if (app.Environment.IsDevelopment())
-{
-    Console.WriteLine("Modo desarrollo activado");
-    app.UseDeveloperExceptionPage();
-}
-else
-{
-    Console.WriteLine("Modo produccion activado");
-    app.UseExceptionHandler("/error");
-    app.UseHsts();
-}
 
 app.UseHttpsRedirection();
 
@@ -315,39 +262,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.Map("/error", (HttpContext context) =>
-{
-    var exception = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature>()?.Error;
-    return Results.Problem(
-        title: "Error inesperado",
-        detail: exception?.Message,
-        statusCode: StatusCodes.Status500InternalServerError
-    );
-});
-
-Console.WriteLine("\nMiddleware configurado");
-Console.WriteLine("================================");
-
-app.MapGet("/", () => Results.Redirect("/swagger")).AllowAnonymous();
-app.MapGet("/health", () => Results.Json(new
-{
-    status = "healthy",
-    timestamp = DateTime.UtcNow,
-    environment = app.Environment.EnvironmentName,
-    version = "1.0"
-})).AllowAnonymous();
-
-Console.WriteLine("\nEndpoints disponibles:");
-Console.WriteLine("  GET  /                -> Redirige a Swagger UI");
-Console.WriteLine("  GET  /health          -> Health Check");
-Console.WriteLine("  POST /api/Token       -> Autenticacion JWT");
-Console.WriteLine("  GET  /api/Token/TestConexion -> Prueba de conexion");
-Console.WriteLine("  GET  /api/Token/Config -> Configuracion del sistema");
-Console.WriteLine("\nEndpoints protegidos:");
-Console.WriteLine("  /api/v1/Medico/*      -> Requiere autenticacion");
-Console.WriteLine("  /api/v1/Paciente/*    -> Requiere autenticacion");
-Console.WriteLine("  /api/v1/Cita/*        -> Requiere autenticacion");
-Console.WriteLine("  /api/v1/Disponibilidad/* -> Requiere autenticacion");
-
 app.Run();
+
+

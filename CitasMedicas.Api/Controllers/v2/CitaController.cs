@@ -11,19 +11,11 @@ using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
+using System.Linq;
 
 namespace CitasMedicas.Api.Controllers.v2
 {
-    /// <summary>
-    /// Controlador que gestiona las operaciones relacionadas con las citas médicas (v2).
-    /// </summary>
-    /// <remarks>
-    /// Versión mejorada que incluye filtros avanzados y estadísticas.
-    /// </remarks>
     [Authorize]
     [Produces("application/json")]
     [ApiVersion("2.0")]
@@ -33,22 +25,21 @@ namespace CitasMedicas.Api.Controllers.v2
     {
         private readonly ICitaService _service;
         private readonly IValidator<ReservaCitaDto> _validator;
+        private readonly IValidator<CancelarCitaDto> _cancelarValidator;
         private readonly IMapper _mapper;
 
-        public CitaController(ICitaService service, IValidator<ReservaCitaDto> validator, IMapper mapper)
+        public CitaController(
+            ICitaService service,
+            IValidator<ReservaCitaDto> validator,
+            IValidator<CancelarCitaDto> cancelarValidator,
+            IMapper mapper)
         {
             _service = service;
             _validator = validator;
+            _cancelarValidator = cancelarValidator;
             _mapper = mapper;
-
         }
 
-        /// <summary>
-        /// Registra una nueva cita médica en el sistema (v2).
-        /// </summary>
-        /// <remarks>
-        /// Versión mejorada con validaciones adicionales y mejor respuesta
-        /// </remarks>
         [HttpPost("reservar")]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
@@ -60,7 +51,10 @@ namespace CitasMedicas.Api.Controllers.v2
                 var errores = validation.Errors.Select(e => e.ErrorMessage).ToList();
                 return BadRequest(new ApiResponse<object>(
                     new { errores },
-                    new[] { new Message { Type = TypeMessage.error.ToString(), Description = "Errores de validación." } }
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.error.ToString(), Description = "Errores de validación." }
+                    }
                 ));
             }
 
@@ -82,7 +76,8 @@ namespace CitasMedicas.Api.Controllers.v2
 
                 return StatusCode(201, new ApiResponse<object>(
                     respuestaMejorada,
-                    new[] {
+                    new List<Message>
+                    {
                         new Message { Type = TypeMessage.success.ToString(), Description = "Cita reservada correctamente." },
                         new Message { Type = TypeMessage.information.ToString(), Description = "API Versión 2.0" }
                     }
@@ -90,19 +85,16 @@ namespace CitasMedicas.Api.Controllers.v2
             }
             catch (BusinessException bex)
             {
-                return StatusCode(bex.StatusCode, new ApiResponse<string>(
-                    default!,
-                    new[] { new Message { Type = TypeMessage.error.ToString(), Description = bex.Message } }
+                return StatusCode(bex.StatusCode, new ApiResponse<object>(
+                    null,
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.error.ToString(), Description = bex.Message }
+                    }
                 ));
             }
         }
 
-        /// <summary>
-        /// Recupera una lista paginada de citas médicas según los filtros especificados (v2).
-        /// </summary>
-        /// <remarks>
-        /// Versión mejorada con filtros.
-        /// </remarks>
         [HttpGet("listar")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<IActionResult> Listar([FromQuery] CitaQueryFilter filters)
@@ -130,7 +122,7 @@ namespace CitasMedicas.Api.Controllers.v2
 
             var responseData = new
             {
-                Citas = result.Pagination,
+                Citas = citas,
                 Estadisticas = estadisticas,
                 Metadata = new
                 {
@@ -143,34 +135,22 @@ namespace CitasMedicas.Api.Controllers.v2
             var response = new ApiResponse<object>(
                 responseData,
                 pagination!,
-                result.Messages!
+                result.Messages?.ToList() ?? new List<Message>()
             );
 
             return StatusCode((int)result.StatusCode, response);
         }
-        /// <summary>
-        /// Recupera una lista paginada de citas como DTOs usando AutoMapper.
-        /// </summary>
-        /// <remarks>
-        /// Convierte los objetos <see cref="Cita"/> en <see cref="ReservaCitaDto"/> utilizando AutoMapper.  
-        /// Retorna los resultados junto con los datos de paginación.
-        /// </remarks>
-        /// <param name="filters">Filtros aplicables para la búsqueda y paginación.</param>
-        /// <returns>Lista paginada de objetos <see cref="ReservaCitaDto"/>.</returns>
-        /// <response code="200">Citas obtenidas correctamente.</response>
-        /// <response code="500">Error interno del servidor.</response>
+
         [HttpGet("dto/mapper")]
-        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<ReservaCitaDto>>))]
-        [ProducesResponseType((int)HttpStatusCode.InternalServerError, Type = typeof(ApiResponse<string>))]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<Cita>>))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> GetCitasDtoMapper([FromQuery] CitaQueryFilter filters)
         {
             try
             {
                 var result = await _service.GetAllCitasResponseAsync(filters);
 
-                var citasDto = result.Pagination != null
-                    ? result.Pagination.Cast<Cita>().ToList()
-                    : new List<Cita>();
+                var citas = result.Pagination?.Cast<Cita>().ToList() ?? new List<Cita>();
 
                 var pagination = result.Pagination != null ? new Pagination
                 {
@@ -182,24 +162,84 @@ namespace CitasMedicas.Api.Controllers.v2
                     HasPreviousPage = result.Pagination.HasPreviousPage
                 } : null;
 
-                var response = new ApiResponse<IEnumerable<Cita>>(citasDto)
+                var response = new ApiResponse<IEnumerable<Cita>>(citas)
                 {
                     Pagination = pagination,
-                    Messages = result.Messages
+                    Messages = result.Messages?.ToList() ?? new List<Message>()
                 };
 
                 return StatusCode((int)result.StatusCode, response);
             }
             catch (Exception err)
             {
-                var responseError = new ResponseData()
-                {
-                    Messages = new[]
+                return StatusCode(500, new ApiResponse<object>(
+                    null,
+                    new List<Message>
                     {
                         new Message { Type = TypeMessage.error.ToString(), Description = err.Message }
-                    },
+                    }
+                ));
+            }
+        }
+
+        [HttpPut("cancelar/{id}")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [SwaggerOperation(Summary = "Cancela una cita médica - Versión 2.0", Description = "Versión mejorada con información detallada sobre tiempos y reembolsos")]
+        public async Task<IActionResult> Cancelar(int id, [FromBody] CancelarCitaDto? dto = null)
+        {
+            if (dto != null)
+            {
+                var validation = await _cancelarValidator.ValidateAsync(dto);
+                if (!validation.IsValid)
+                {
+                    var errores = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                    return BadRequest(new ApiResponse<object>(
+                        new { errores },
+                        new List<Message>
+                        {
+                            new Message { Type = TypeMessage.error.ToString(), Description = "Errores de validación - Versión 2.0" }
+                        }
+                    ));
+                }
+            }
+
+            try
+            {
+                var cita = await _service.CancelarCitaAsync(id, dto?.MotivoCancelacion);
+
+                var respuestaMejorada = new
+                {
+                    cita.Id,
+                    cita.FechaCita,
+                    cita.HoraCita,
+                    cita.Estado,
+                    Motivo = dto?.MotivoCancelacion ?? "Sin motivo especificado",
+                    TiempoCancelacion = DateTime.Now,
+                    HorasDeAnticipacion = (cita.FechaCita.Date.Add(cita.HoraCita) - DateTime.Now).TotalHours,
+                    EstadoPago = cita.Pago?.EstadoPago,
+                    Reembolso = cita.Pago?.EstadoPago == "Reembolsado" ? cita.Pago?.Monto : 0,
+                    Detalles = "Cancelación procesada - Versión 2.0"
                 };
-                return StatusCode(500, responseError);
+
+                return Ok(new ApiResponse<object>(
+                    respuestaMejorada,
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.success.ToString(), Description = "Cita cancelada exitosamente." },
+                        new Message { Type = TypeMessage.information.ToString(), Description = $"API Versión 2.0 - Tiempo restante: {respuestaMejorada.HorasDeAnticipacion:F1} horas" }
+                    }
+                ));
+            }
+            catch (BusinessException bex)
+            {
+                return StatusCode(bex.StatusCode, new ApiResponse<object>(
+                    null,
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.error.ToString(), Description = $"{bex.Message} - Versión 2.0" }
+                    }
+                ));
             }
         }
     }

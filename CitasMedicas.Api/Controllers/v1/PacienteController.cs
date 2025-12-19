@@ -35,7 +35,10 @@ namespace CitasMedicas.Api.Controllers.v1
                 var errores = validation.Errors.Select(e => e.ErrorMessage).ToList();
                 return BadRequest(new ApiResponse<object>(
                     new { errores },
-                    new[] { new Message { Type = TypeMessage.error.ToString(), Description = "Errores de validación." } }
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.error.ToString(), Description = "Errores de validación." }
+                    }
                 ));
             }
 
@@ -44,21 +47,30 @@ namespace CitasMedicas.Api.Controllers.v1
                 var paciente = await _service.RegistrarPacienteAsync(dto);
 
                 if (paciente == null)
-                    return BadRequest(new ApiResponse<string>(
-                        default!,
-                        new[] { new Message { Type = TypeMessage.warning.ToString(), Description = "El correo ya está registrado." } }
+                    return BadRequest(new ApiResponse<object>(
+                        null,
+                        new List<Message>
+                        {
+                            new Message { Type = TypeMessage.warning.ToString(), Description = "El correo ya está registrado." }
+                        }
                     ));
 
                 return StatusCode(201, new ApiResponse<PacienteDto>(
                     paciente,
-                    new[] { new Message { Type = TypeMessage.success.ToString(), Description = "Paciente registrado correctamente." } }
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.success.ToString(), Description = "Paciente registrado correctamente." }
+                    }
                 ));
             }
             catch (Exception ex)
             {
-                return BadRequest(new ApiResponse<string>(
-                    default!,
-                    new[] { new Message { Type = TypeMessage.error.ToString(), Description = $"Error: {ex.Message}" } }
+                return BadRequest(new ApiResponse<object>(
+                    null,
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.error.ToString(), Description = $"Error: {ex.Message}" }
+                    }
                 ));
             }
         }
@@ -69,7 +81,10 @@ namespace CitasMedicas.Api.Controllers.v1
             var lista = await _service.ObtenerPacientesAsync();
             return Ok(new ApiResponse<IEnumerable<PacienteDto>>(
                 lista,
-                new[] { new Message { Type = TypeMessage.information.ToString(), Description = "Lista de pacientes obtenida correctamente." } }
+                new List<Message>
+                {
+                    new Message { Type = TypeMessage.information.ToString(), Description = "Lista de pacientes obtenida correctamente." }
+                }
             ));
         }
     }

@@ -33,4 +33,8 @@
     <ProjectReference Include="..\CitasMedicas.Core\CitasMedicas.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

@@ -5,6 +5,7 @@ using System.Data.Common;
 using System.Threading.Tasks;
 using CitasMedicas.Core.Enums;
 using CitasMedicas.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Dapper;
 
 namespace CitasMedicas.Infrastructure.Data
@@ -26,7 +27,7 @@ namespace CitasMedicas.Infrastructure.Data
             _connFactory = connFactory;
         }
 
-        #region UnitOfWork integration
+
         public void SetAmbientConnection(IDbConnection conn, IDbTransaction? tx)
         {
             _ambient.Value = (conn, tx);
@@ -36,9 +37,6 @@ namespace CitasMedicas.Infrastructure.Data
         {
             _ambient.Value = (null, null);
         }
-        #endregion
-
-        #region Helpers
 
         /// <summary>
         /// Devuelve la conexión y transacción activas.
@@ -60,114 +58,94 @@ namespace CitasMedicas.Infrastructure.Data
                 await dbConn.OpenAsync();
         }
 
-        private async Task CloseIfOwnedAsync(IDbConnection conn, bool owns)
-        {
-            if (!owns) return;
-
-            if (conn is DbConnection dbConn && dbConn.State != ConnectionState.Closed)
-                await dbConn.CloseAsync();
-
-            conn.Dispose();
-        }
-
-        #endregion
-
-        #region Query Methods
-
         /// <summary>
         /// Ejecuta una consulta SELECT que devuelve múltiples filas.
         /// </summary>
-        public async Task<IEnumerable<T>> QueryAsync<T>(string sql, object? param = null,
-            CommandType commandType = CommandType.Text)
+        public async Task<IEnumerable<T>> QueryAsync<T>(string sql, object? param = null, CommandType commandType = CommandType.Text)
         {
             var (conn, tx, owns) = GetConnAndTx();
-
             try
             {
                 await OpenIfNeededAsync(conn);
                 return await conn.QueryAsync<T>(new CommandDefinition(sql, param, tx, commandType: commandType));
             }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error al ejecutar QueryAsync: {ex.Message}");
-            }
             finally
             {
-                await CloseIfOwnedAsync(conn, owns);
+                if (owns)
+                {
+                    if (conn is DbConnection dbConn && dbConn.State != ConnectionState.Closed)
+                        await dbConn.CloseAsync();
+                    conn.Dispose();
+                }
             }
         }
 
         /// <summary>
         /// Devuelve una única fila o null.
         /// </summary>
-        public async Task<T?> QueryFirstOrDefaultAsync<T>(string sql, object? param = null,
-            CommandType commandType = CommandType.Text)
+        public async Task<T?> QueryFirstOrDefaultAsync<T>(string sql, object? param = null, CommandType commandType = CommandType.Text)
         {
             var (conn, tx, owns) = GetConnAndTx();
-
             try
             {
                 await OpenIfNeededAsync(conn);
                 return await conn.QueryFirstOrDefaultAsync<T>(new CommandDefinition(sql, param, tx, commandType: commandType));
             }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error al ejecutar QueryFirstOrDefaultAsync: {ex.Message}");
-            }
             finally
             {
-                await CloseIfOwnedAsync(conn, owns);
+                if (owns)
+                {
+                    if (conn is DbConnection dbConn && dbConn.State != ConnectionState.Closed)
+                        await dbConn.CloseAsync();
+                    conn.Dispose();
+                }
             }
         }
 
         /// <summary>
         /// Ejecuta un comando que no devuelve resultados (INSERT, UPDATE, DELETE).
         /// </summary>
-        public async Task<int> ExecuteAsync(string sql, object? param = null,
-            CommandType commandType = CommandType.Text)
+        public async Task<int> ExecuteAsync(string sql, object? param = null, CommandType commandType = CommandType.Text)
         {
             var (conn, tx, owns) = GetConnAndTx();
-
             try
             {
                 await OpenIfNeededAsync(conn);
                 return await conn.ExecuteAsync(new CommandDefinition(sql, param, tx, commandType: commandType));
             }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error al ejecutar ExecuteAsync: {ex.Message}");
-            }
             finally
             {
-                await CloseIfOwnedAsync(conn, owns);
+                if (owns)
+                {
+                    if (conn is DbConnection dbConn && dbConn.State != ConnectionState.Closed)
+                        await dbConn.CloseAsync();
+                    conn.Dispose();
+                }
             }
         }
 
         /// <summary>
-        /// Ejecuta un query escalar (ejemplo: obtener el último ID insertado).
+        /// Ejecuta un comando que no devuelve resultados (INSERT, UPDATE, DELETE).
         /// </summary>
-        public async Task<T> ExecuteScalarAsync<T>(string sql, object? param = null,
-            CommandType commandType = CommandType.Text)
+        public async Task<T> ExecuteScalarAsync<T>(string sql, object? param = null, CommandType commandType = CommandType.Text)
         {
             var (conn, tx, owns) = GetConnAndTx();
-
             try
             {
                 await OpenIfNeededAsync(conn);
-                var result = await conn.ExecuteScalarAsync(new CommandDefinition(sql, param, tx, commandType: commandType));
-                if (result == null || result == DBNull.Value) return default!;
-                return (T)Convert.ChangeType(result, typeof(T));
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error al ejecutar ExecuteScalarAsync: {ex.Message}");
+                var res = await conn.ExecuteScalarAsync(new CommandDefinition(sql, param, tx, commandType: commandType));
+                if (res == null || res == DBNull.Value) return default!;
+                return (T)Convert.ChangeType(res, typeof(T));
             }
             finally
             {
-                await CloseIfOwnedAsync(conn, owns);
+                if (owns)
+                {
+                    if (conn is DbConnection dbConn && dbConn.State != ConnectionState.Closed)
+                        await dbConn.CloseAsync();
+                    conn.Dispose();
+                }
             }
         }
-
-        #endregion
     }
 }

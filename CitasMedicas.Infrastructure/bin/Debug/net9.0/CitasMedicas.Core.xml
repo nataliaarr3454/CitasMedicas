@@ -1,0 +1,658 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CitasMedicas.Core</name>
+    </assembly>
+    <members>
+        <member name="T:CitasMedicas.Core.DTOs.CancelarCitaDto">
+            <summary>
+            DTO para cancelar una cita médica.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.CancelarCitaDto.MotivoCancelacion">
+            <summary>
+            Motivo por el cual se cancela la cita.
+            </summary>
+            <example>El paciente no puede asistir por motivos personales.</example>
+        </member>
+        <member name="T:CitasMedicas.Core.DTOs.DisponibilidadDto">
+            <summary>
+            DTO para crear o actualizar la disponibilidad de un médico.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.DisponibilidadDto.MedicoId">
+            <summary>
+            Identificador del médico cuya disponibilidad se está creando.
+            </summary>
+            <example>5</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.DisponibilidadDto.Fecha">
+            <summary>
+            Fecha en la que el médico está disponible.
+            </summary>
+            <example>2025-06-20</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.DisponibilidadDto.HoraInicio">
+            <summary>
+            Hora de inicio de la disponibilidad.
+            </summary>
+            <example>09:00:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.DisponibilidadDto.HoraFin">
+            <summary>
+            Hora de fin de la disponibilidad.
+            </summary>
+            <example>10:00:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.DisponibilidadDto.CostoCita">
+            <summary>
+            Costo de la cita durante este horario de disponibilidad.
+            </summary>
+            <example>60.00</example>
+        </member>
+        <member name="T:CitasMedicas.Core.DTOs.MedicoCantidadCitasDto">
+            <summary>
+            DTO para reportes estadísticos de cantidad de citas por médico.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.MedicoCantidadCitasDto.MedicoId">
+            <summary>
+            Identificador único del médico.
+            </summary>
+            <example>3</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.MedicoCantidadCitasDto.Nombre">
+            <summary>
+            Nombre completo del médico.
+            </summary>
+            <example>Dra. Ana López</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.MedicoCantidadCitasDto.Especialidad">
+            <summary>
+            Especialidad médica del profesional.
+            </summary>
+            <example>Pediatría</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.MedicoCantidadCitasDto.CantidadCitas">
+            <summary>
+            Cantidad total de citas atendidas o programadas por el médico.
+            </summary>
+            <example>24</example>
+        </member>
+        <member name="T:CitasMedicas.Core.DTOs.MedicoDto">
+            <summary>
+            DTO para mostrar información básica de un médico.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.MedicoDto.Id">
+            <summary>
+            Identificador único del médico.
+            </summary>
+            <example>7</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.MedicoDto.Nombre">
+            <summary>
+            Nombre completo del médico.
+            </summary>
+            <example>Dr. Carlos Rodríguez</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.MedicoDto.Especialidad">
+            <summary>
+            Especialidad médica del profesional.
+            </summary>
+            <example>Dermatología</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.MedicoDto.Correo">
+            <summary>
+            Correo electrónico de contacto.
+            </summary>
+            <example>carlos.rodriguez@clinica.com</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.MedicoDto.Telefono">
+            <summary>
+            Número de teléfono de contacto.
+            </summary>
+            <example>+5491154876321</example>
+        </member>
+        <member name="T:CitasMedicas.Core.DTOs.PacienteDto">
+            <summary>
+            DTO para crear o actualizar un paciente.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.PacienteDto.Nombre">
+            <summary>
+            Nombre del paciente.
+            </summary>
+            <example>Laura</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.PacienteDto.Apellido">
+            <summary>
+            Apellido del paciente.
+            </summary>
+            <example>Martínez</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.PacienteDto.Edad">
+            <summary>
+            Edad del paciente en años.
+            </summary>
+            <example>28</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.PacienteDto.Correo">
+            <summary>
+            Correo electrónico de contacto.
+            </summary>
+            <example>laura.martinez@email.com</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.PacienteDto.Telefono">
+            <summary>
+            Número de teléfono de contacto.
+            </summary>
+            <example>79842366</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.PacienteDto.Direccion">
+            <summary>
+            Dirección de residencia.
+            </summary>
+            <example>Avenida Siempre Viva 742, Springfield</example>
+        </member>
+        <member name="T:CitasMedicas.Core.DTOs.ReservaCitaDto">
+            <summary>
+            DTO para realizar la reserva de una cita médica.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.ReservaCitaDto.CorreoPaciente">
+            <summary>
+            Correo electrónico del paciente que reserva la cita.
+            </summary>
+            <example>paciente.ejemplo@email.com</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.ReservaCitaDto.DisponibilidadId">
+            <summary>
+            Identificador de la disponibilidad seleccionada para la cita.
+            </summary>
+            <example>12</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.ReservaCitaDto.Motivo">
+            <summary>
+            Motivo de la consulta médica.
+            </summary>
+            <example>Consulta de rutina anual</example>
+        </member>
+        <member name="T:CitasMedicas.Core.DTOs.SecurityDto">
+            <summary>
+            DTO para registrar usuarios del sistema.
+            </summary>
+            <remarks>
+            Solo accesible por usuarios con rol Administrador.
+            </remarks>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.SecurityDto.Name">
+            <summary>
+            Nombre completo del usuario.
+            </summary>
+            <example>Administrador</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.SecurityDto.Login">
+            <summary>
+            Login del usuario.
+            </summary>
+            <example>admin</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.SecurityDto.Password">
+            <summary>
+            Contraseña del usuario.
+            </summary>
+            <example>admin123</example>
+        </member>
+        <member name="P:CitasMedicas.Core.DTOs.SecurityDto.Role">
+            <summary>
+            Rol asignado al usuario.
+            </summary>
+            <example>Administrador</example>
+        </member>
+        <member name="T:CitasMedicas.Core.Entities.BaseEntity">
+            <summary>
+            Esta clase define el identificador
+            que sera heredado por las entidades .
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.BaseEntity.Id">
+            <summary>
+            Identificador base que se puede reutilizar en varias entidades.
+            en este caso en todas mis entidades
+            </summary>
+            <example>2</example>
+        </member>
+        <member name="T:CitasMedicas.Core.Entities.Cita">
+            <summary>
+            Representa las citas medicas on line
+            </summary>
+            <remarks>
+            Esta entidad almacena la informacion principal de una cita
+            </remarks>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.PacienteId">
+            <summary>
+            Identificador del paciente que tiene la cita programada.
+            </summary>
+            <example>5</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.MedicoId">
+            <summary>
+            Identificador del médico que tiene la cita programada.
+            </summary>
+            <example>2</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.DisponibilidadId">
+            <summary>
+            Identificador de la disponibilidad utilizada para la cita.
+            </summary>
+            <example>10</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.FechaCita">
+            <summary>
+            Fecha programada de la cita.
+            </summary>
+            <example>2025-06-11</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.HoraCita">
+            <summary>
+            Hora programada de la cita.
+            </summary>
+            <example>14:30:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.Motivo">
+            <summary>
+            Motivo de la consulta.
+            </summary>
+            <example>Control de rutina</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.Estado">
+            <summary>
+            Estado de la Cita.
+            </summary>
+            <example>Reservada</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.FechaRegistro">
+            <summary>
+            Fecha y hora en que se registró la cita.
+            </summary>
+            <example>2025-06-10T09:15:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.Paciente">
+            <summary>
+            Referencia al paciente asociado.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.Medico">
+            <summary>
+            Referencia al médico asociado.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.Disponibilidad">
+            <summary>
+            Referencia a la disponibilidad asociada.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Cita.Pago">
+            <summary>
+            Referencia al pago asociado (opcional).
+            </summary>
+        </member>
+        <member name="T:CitasMedicas.Core.Entities.Disponibilidad">
+            <summary>
+            Representa la disponibilidad horaria de un médico para atender citas.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Disponibilidad.MedicoId">
+            <summary>
+            Identificador del médico al que pertenece esta disponibilidad.
+            </summary>
+            <example>3</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Disponibilidad.Fecha">
+            <summary>
+            Fecha en la que el médico está disponible.
+            </summary>
+            <example>2025-06-15</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Disponibilidad.HoraInicio">
+            <summary>
+            Hora de inicio de la disponibilidad.
+            </summary>
+            <example>09:00:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Disponibilidad.HoraFin">
+            <summary>
+            Hora de fin de la disponibilidad.
+            </summary>
+            <example>10:00:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Disponibilidad.CostoCita">
+            <summary>
+            Costo de la cita durante esta disponibilidad.
+            </summary>
+            <example>50.00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Disponibilidad.Estado">
+            <summary>
+            Estado de la disponibilidad (Disponible / Ocupado).
+            </summary>
+            <example>Disponible</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Disponibilidad.Medico">
+            <summary>
+            Referencia al médico asociado.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Disponibilidad.Citas">
+            <summary>
+            Colección de citas asociadas a esta disponibilidad.
+            </summary>
+        </member>
+        <member name="T:CitasMedicas.Core.Entities.Medico">
+            <summary>
+            Representa un médico del sistema de citas médicas.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Medico.Nombre">
+            <summary>
+            Nombre completo del médico.
+            </summary>
+            <example>Dr. Juan Pérez</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Medico.Especialidad">
+            <summary>
+            Especialidad médica del profesional.
+            </summary>
+            <example>Cardiología</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Medico.Correo">
+            <summary>
+            Correo electrónico de contacto del médico.
+            </summary>
+            <example>juan.perez@clinica.com</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Medico.Telefono">
+            <summary>
+            Número de teléfono de contacto del médico.
+            </summary>
+            <example>+1234567890</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Medico.Disponibilidades">
+            <summary>
+            Colección de disponibilidades horarias del médico.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Medico.Citas">
+            <summary>
+            Colección de citas programadas con el médico.
+            </summary>
+        </member>
+        <member name="T:CitasMedicas.Core.Entities.Paciente">
+            <summary>
+            Representa un paciente del sistema de citas médicas.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Paciente.Nombre">
+            <summary>
+            Nombre del paciente.
+            </summary>
+            <example>María</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Paciente.Apellido">
+            <summary>
+            Apellido del paciente.
+            </summary>
+            <example>González</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Paciente.Edad">
+            <summary>
+            Edad del paciente en años.
+            </summary>
+            <example>35</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Paciente.Correo">
+            <summary>
+            Correo electrónico de contacto del paciente.
+            </summary>
+            <example>maria.gonzalez@email.com</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Paciente.Telefono">
+            <summary>
+            Número de teléfono de contacto del paciente.
+            </summary>
+            <example>+5491123456789</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Paciente.Direccion">
+            <summary>
+            Dirección de residencia del paciente.
+            </summary>
+            <example>Calle Principal 123, Ciudad, País</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Paciente.Saldo">
+            <summary>
+            Saldo disponible del paciente para pagar citas.
+            </summary>
+            <example>150.50</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Paciente.Citas">
+            <summary>
+            Colección de citas programadas por el paciente.
+            </summary>
+        </member>
+        <member name="T:CitasMedicas.Core.Entities.Pago">
+            <summary>
+            Representa el pago asociado a una cita médica.
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Pago.CitaId">
+            <summary>
+            Identificador de la cita asociada al pago.
+            </summary>
+            <example>15</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Pago.Monto">
+            <summary>
+            Monto del pago.
+            </summary>
+            <example>75.00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Pago.FechaPago">
+            <summary>
+            Fecha y hora en que se realizó el pago.
+            </summary>
+            <example>2025-06-10T14:30:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Pago.EstadoPago">
+            <summary>
+            Estado actual del pago (Pendiente, Pagado, Multado).
+            </summary>
+            <example>Pagado</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Pago.Cita">
+            <summary>
+            Referencia a la cita asociada al pago.
+            </summary>
+        </member>
+        <member name="T:CitasMedicas.Core.Entities.Security">
+            <summary>
+            Representa un usuario del sistema
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Security.Login">
+            <summary>
+            Login del usuario.
+            </summary>
+            <example>medic</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Security.Password">
+            <summary>
+            Contraseña del usuario.
+            </summary>
+            <example>medi123</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Security.Name">
+            <summary>
+            Nombre completo del usuario.
+            </summary>
+            <example>Medico</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.Security.Role">
+            <summary>
+            Rol asignado al usuario.
+            </summary>
+            <example>Medico</example>
+        </member>
+        <member name="T:CitasMedicas.Core.Entities.UserLogin">
+            <summary>
+            Entidad utilizado para autenticacion de usuarios.
+            </summary>
+            <remarks>
+            Se utiliza en el proceso de login para obtener un token JWT.
+            </remarks>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.UserLogin.Login">
+            <summary>
+            Usuario o login.
+            </summary>
+            <example>admin</example>
+        </member>
+        <member name="P:CitasMedicas.Core.Entities.UserLogin.Password">
+            <summary>
+            Contraseña del usuario.
+            </summary>
+            <example>admin123</example>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.GetAllCitasResponseAsync(CitasMedicas.Core.QueryFilters.CitaQueryFilter)">
+            <summary>
+            Obtiene citas aplicando filtros opcionales.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.ReservarCitaAsync(CitasMedicas.Core.DTOs.ReservaCitaDto)">
+            <summary>
+            Reserva una nueva cita a partir del DTO recibido.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.GetCitaAsync(System.Int32)">
+            <summary>
+            Obtiene una cita por su Id.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.UpdateCitaAsync(CitasMedicas.Core.Entities.Cita)">
+            <summary>
+            Actualiza una cita existente.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.DeleteCitaAsync(System.Int32)">
+            <summary>
+            Elimina una cita existente.
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.GetAllCitasDapperAsync">
+            <summary>
+            Obtiene todas las citas vía Dapper (opcional).
+            </summary>
+        </member>
+        <member name="M:CitasMedicas.Core.Interfaces.ICitaService.CancelarCitaAsync(System.Int32,System.String)">
+            <sumary>
+             Cancela una cita solo con el id de la cita si la cancelacion es antes de las 24 horas
+             y se reeembolsa el dinero o se cancela el pago
+             y si es menos de las 24 horas no se cancela la cita
+             </sumary>
+        </member>
+        <member name="T:CitasMedicas.Core.QueryFilters.CitaQueryFilter">
+            <summary>
+            Filtros para consulta de citas médicas
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.CitaQueryFilter.PacienteId">
+            <summary>
+            ID del paciente
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.CitaQueryFilter.MedicoId">
+            <summary>
+            ID del médico
+            </summary>
+            <example>2</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.CitaQueryFilter.Estado">
+            <summary>
+            Estado de la cita (Ej: Reservada, Completada, Cancelada)
+            </summary>
+            <example>Reservada</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.CitaQueryFilter.FechaCita">
+            <summary>
+            Fecha de la cita
+            </summary>
+            <example>2025-01-15</example>
+        </member>
+        <member name="T:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter">
+            <summary>
+            Filtros para consulta de disponibilidades médicas
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter.MedicoId">
+            <summary>
+            ID del médico
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter.Fecha">
+            <summary>
+            Fecha de la disponibilidad
+            </summary>
+            <example>2025-01-15</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter.HoraInicio">
+            <summary>
+            Hora de inicio de la disponibilidad
+            </summary>
+            <example>09:00:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter.HoraFin">
+            <summary>
+            Hora de fin de la disponibilidad
+            </summary>
+            <example>10:00:00</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.DisponibilidadQueryFilter.CostoCita">
+            <summary>
+            Costo de la cita
+            </summary>
+            <example>150.00</example>
+        </member>
+        <member name="T:CitasMedicas.Core.QueryFilters.MedicoQueryFilter">
+            <summary>
+            Filtros para consulta de médicos
+            </summary>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.MedicoQueryFilter.MedicoId">
+            <summary>
+            ID del médico
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.MedicoQueryFilter.Nombre">
+            <summary>
+            Nombre del médico
+            </summary>
+            <example>Juan</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.MedicoQueryFilter.Especialidad">
+            <summary>
+            Especialidad del médico
+            </summary>
+            <example>Cardiología</example>
+        </member>
+        <member name="P:CitasMedicas.Core.QueryFilters.MedicoQueryFilter.Telefono">
+            <summary>
+            Teléfono del médico
+            </summary>
+            <example>77788899</example>
+        </member>
+    </members>
+</doc>

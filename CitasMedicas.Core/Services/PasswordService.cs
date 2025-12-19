@@ -13,12 +13,11 @@ namespace CitasMedicas.Core.Services
         {
             _options = options.Value;
         }
-
         public string Hash(string password)
         {
-            byte[] salt = RandomNumberGenerator.GetBytes(_options.SaltSize);
+            var salt = RandomNumberGenerator.GetBytes(_options.SaltSize);
 
-            byte[] hash = Rfc2898DeriveBytes.Pbkdf2(
+            var key = Rfc2898DeriveBytes.Pbkdf2(
                 password,
                 salt,
                 _options.Iterations,
@@ -26,40 +25,28 @@ namespace CitasMedicas.Core.Services
                 _options.KeySize
             );
 
-            var hashBase64 = Convert.ToBase64String(hash);
-            var saltBase64 = Convert.ToBase64String(salt);
-
-            return $"{_options.Iterations}.{saltBase64}.{hashBase64}";
+            return $"{_options.Iterations}.{Convert.ToBase64String(salt)}.{Convert.ToBase64String(key)}";
         }
-
         public bool Check(string hash, string password)
         {
-            try
-            {
-                var parts = hash.Split('.');
-                if (parts.Length != 3)
-                {
-                    throw new FormatException("El formato del hash no es correcto.");
-                }
+            var parts = hash.Split('.');
+            if (parts.Length != 3)
+                throw new FormatException("El formato del Hash no es correcta");
 
-                var iterations = Convert.ToInt32(parts[0]);
-                var salt = Convert.FromBase64String(parts[1]);
-                var storedHash = Convert.FromBase64String(parts[2]);
 
-                byte[] calculatedHash = Rfc2898DeriveBytes.Pbkdf2(
-                    password,
-                    salt,
-                    iterations,
-                    HashAlgorithmName.SHA256,
-                    _options.KeySize
-                );
+            var iterations = Convert.ToInt32(parts[0]);
+            var salt = Convert.FromBase64String(parts[1]);
+            var key = Convert.FromBase64String(parts[2]);
 
-                return CryptographicOperations.FixedTimeEquals(calculatedHash, storedHash);
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            var keyToCheck = Rfc2898DeriveBytes.Pbkdf2(
+                password,
+                salt,
+                iterations,
+                HashAlgorithmName.SHA256,
+                _options.KeySize
+            );
+
+            return CryptographicOperations.FixedTimeEquals(keyToCheck, key);
         }
     }
 }

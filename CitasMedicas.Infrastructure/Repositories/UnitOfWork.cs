@@ -2,7 +2,6 @@
 using CitasMedicas.Core.Interfaces;
 using CitasMedicas.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
 using System.Threading.Tasks;
@@ -12,57 +11,50 @@ namespace CitasMedicas.Infrastructure.Repositories
     public class UnitOfWork : IUnitOfWork
     {
         private readonly CitasMedicasContext _context;
-        private IDbContextTransaction? _efTransaction;
-        private readonly IDapperContext? _dapper;
-        private ISecurityRepository? _securityRepository;
+        private IDbContextTransaction _efTransaction;
+        private readonly IDapperContext _dapper;
 
-        private IBaseRepository<Medico>? _medicoRepository;
-        private IBaseRepository<Paciente>? _pacienteRepository;
-        private IBaseRepository<Disponibilidad>? _disponibilidadRepository;
-        private IBaseRepository<Cita>? _citaRepository;
-        private IBaseRepository<Pago>? _pagoRepository;
+        private readonly IMedicoRepository _medico;
+        private readonly IPacienteRepository _paciente;
+        private readonly IDisponibilidadRepository _disponibilidad;
+        private readonly ICitaRepository _cita;
+        private readonly IPagoRepository _pago;
+        private readonly ISecurityRepository _security;
 
-
-        public UnitOfWork(CitasMedicasContext context, IDapperContext? dapper = null)
+        public UnitOfWork(CitasMedicasContext context, IDapperContext dapper)
         {
             _context = context;
             _dapper = dapper;
+
+            _medico = new MedicoRepository(context);
+            _paciente = new PacienteRepository(context);
+            _disponibilidad = new DisponibilidadRepository(context);
+            _cita = new CitaRepository(context);
+            _pago = new PagoRepository(context);
+            _security = new SecurityRepository(context);
         }
 
-        public IBaseRepository<Medico> MedicoRepository =>
-            _medicoRepository ??= new BaseRepository<Medico>(_context);
-
-        public IBaseRepository<Paciente> PacienteRepository =>
-            _pacienteRepository ??= new BaseRepository<Paciente>(_context);
-
-        public IBaseRepository<Disponibilidad> DisponibilidadRepository =>
-            _disponibilidadRepository ??= new BaseRepository<Disponibilidad>(_context);
-
-        public IBaseRepository<Cita> CitaRepository =>
-            _citaRepository ??= new BaseRepository<Cita>(_context);
-
-        public IBaseRepository<Pago> PagoRepository =>
-            _pagoRepository ??= new BaseRepository<Pago>(_context);
-        public ISecurityRepository SecurityRepository =>
-            _securityRepository ??= new SecurityRepository(_context);
-
-        public void SaveChanges()
-        {
-            _context.SaveChanges();
-        }
+        public IMedicoRepository Medico => _medico;
+        public IPacienteRepository Paciente => _paciente;
+        public IDisponibilidadRepository Disponibilidad => _disponibilidad;
+        public ICitaRepository Cita => _cita;
+        public IPagoRepository Pago => _pago;
+        public ISecurityRepository SecurityRepository => _security;
+        public IDapperContext Dapper => _dapper;
 
         public async Task SaveChangesAsync()
         {
             await _context.SaveChangesAsync();
         }
-
-        #region Transacciones
+        public void SaveChanges()
+        {
+            _context.SaveChanges();
+        }
         public async Task BeginTransactionAsync()
         {
             if (_efTransaction == null)
             {
                 _efTransaction = await _context.Database.BeginTransactionAsync();
-
                 var conn = _context.Database.GetDbConnection();
                 var tx = _efTransaction.GetDbTransaction();
                 _dapper?.SetAmbientConnection(conn, tx);
@@ -100,7 +92,6 @@ namespace CitasMedicas.Infrastructure.Repositories
 
         public IDbConnection? GetDbConnection() => _context.Database.GetDbConnection();
         public IDbTransaction? GetDbTransaction() => _efTransaction?.GetDbTransaction();
-        #endregion
 
         public void Dispose()
         {

@@ -1,15 +1,11 @@
-﻿/*using CitasMedicas.Core.Entities;
-using System.Collections.Generic;
+﻿using CitasMedicas.Core.Entities;
 using System.Threading.Tasks;
 
 namespace CitasMedicas.Core.Interfaces
 {
-    public interface IMedicoRepository
+    public interface IMedicoRepository : IBaseRepository<Medico>
     {
-        Task AddAsync(Medico medico);
         Task<Medico?> GetByCorreoAsync(string correo);
-        Task<IEnumerable<Medico>> GetAllAsync();
         Task<Medico?> GetByIdAsync(int id);
-
     }
-}*/
+}

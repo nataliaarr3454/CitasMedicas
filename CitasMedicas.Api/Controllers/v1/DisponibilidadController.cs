@@ -9,7 +9,6 @@ using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace CitasMedicas.Api.Controllers.v1
 {
@@ -37,7 +36,10 @@ namespace CitasMedicas.Api.Controllers.v1
                 var errores = validation.Errors.Select(e => e.ErrorMessage).ToList();
                 return BadRequest(new ApiResponse<object>(
                     new { errores },
-                    new[] { new Message { Type = TypeMessage.error.ToString(), Description = "Errores de validación." } }
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.error.ToString(), Description = "Errores de validación." }
+                    }
                 ));
             }
 
@@ -50,18 +52,28 @@ namespace CitasMedicas.Api.Controllers.v1
                 CostoCita = dto.CostoCita
             };
 
-            var registro = await _service.RegistrarDisponibilidadAsync(disponibilidad);
+            try
+            {
+                var registro = await _service.RegistrarDisponibilidadAsync(disponibilidad);
 
-            if (registro == null)
-                return BadRequest(new ApiResponse<string>(
-                    default!,
-                    new[] { new Message { Type = TypeMessage.warning.ToString(), Description = "El horario se solapa con otra disponibilidad." } }
+                return StatusCode(201, new ApiResponse<Disponibilidad>(
+                    registro,
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.success.ToString(), Description = "Disponibilidad registrada correctamente." }
+                    }
                 ));
-
-            return StatusCode(201, new ApiResponse<Disponibilidad>(
-                registro,
-                new[] { new Message { Type = TypeMessage.success.ToString(), Description = "Disponibilidad registrada correctamente." } }
-            ));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ApiResponse<object>(
+                    null,
+                    new List<Message>
+                    {
+                        new Message { Type = TypeMessage.warning.ToString(), Description = ex.Message }
+                    }
+                ));
+            }
         }
 
         [HttpGet("listar/{medicoId}")]
@@ -70,18 +82,37 @@ namespace CitasMedicas.Api.Controllers.v1
             var lista = await _service.ObtenerDisponibilidadesPorMedicoAsync(medicoId);
             return Ok(new ApiResponse<IEnumerable<Disponibilidad>>(
                 lista,
-                new[] { new Message { Type = TypeMessage.information.ToString(), Description = "Lista de disponibilidades del médico obtenida correctamente." } }
+                new List<Message>
+                {
+                    new Message { Type = TypeMessage.information.ToString(), Description = "Lista de disponibilidades del médico obtenida correctamente." }
+                }
             ));
         }
 
         [HttpGet("filtrar")]
         public async Task<IActionResult> Filtrar([FromQuery] DisponibilidadQueryFilter filters)
         {
-            var lista = await _service.ObtenerDisponibilidadesFiltradasAsync(filters);
-            return Ok(new ApiResponse<IEnumerable<Disponibilidad>>(
-                lista,
-                new[] { new Message { Type = TypeMessage.information.ToString(), Description = "Lista de disponibilidades filtradas correctamente." } }
-            ));
+            var result = await _service.ObtenerDisponibilidadesFiltradasAsync(filters);
+
+            var disponibilidades = result.Pagination?.Cast<Disponibilidad>().ToList() ?? new List<Disponibilidad>();
+
+            var pagination = result.Pagination != null ? new Pagination
+            {
+                TotalCount = result.Pagination.TotalCount,
+                PageSize = result.Pagination.PageSize,
+                CurrentPage = result.Pagination.CurrentPage,
+                TotalPages = result.Pagination.TotalPages,
+                HasNextPage = result.Pagination.HasNextPage,
+                HasPreviousPage = result.Pagination.HasPreviousPage
+            } : null;
+
+            var response = new ApiResponse<IEnumerable<Disponibilidad>>(disponibilidades)
+            {
+                Pagination = pagination,
+                Messages = result.Messages?.ToList() ?? new List<Message>()
+            };
+
+            return StatusCode((int)result.StatusCode, response);
         }
     }
 }

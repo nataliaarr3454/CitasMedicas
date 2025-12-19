@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Citas Medicas API - v2",
+    "description": "API para gestion de citas medicas - Version 2.0 con mejoras",
+    "contact": {
+      "name": "Equipo de Desarrollo UCB",
+      "email": "natalia.arrazola@ucb.edu.bo"
+    },
+    "version": "v2"
+  },
+  "paths": { },
+  "components": {
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Introduce el token JWT en el formato: Bearer {token}",
+        "scheme": "Bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}
